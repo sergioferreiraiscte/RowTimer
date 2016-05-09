@@ -49,8 +49,9 @@ public class RaceService {
 	@GET	
 	@Produces({ MediaType.APPLICATION_JSON})
 	public Response getEvents() {
-		List<Event> le = eventDAO.getEvents(null);
-		ResponseBuilder response = Response.ok(le);
+//		List<Event> le = eventDAO.getEvents(null);
+		eventDAO.createEvent();
+		ResponseBuilder response = Response.ok("OK");
 		return response.build();
 	}
 }

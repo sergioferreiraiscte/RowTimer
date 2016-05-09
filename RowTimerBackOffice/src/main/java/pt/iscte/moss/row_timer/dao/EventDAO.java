@@ -16,6 +16,17 @@ public class EventDAO {
 	@PersistenceContext //(unitName="rowTimerDB")
 	private EntityManager entityManager;
 
+	
+	public void createEvent() {
+		Event e = new Event();
+		e.setName("Name");
+		Event ev = entityManager.find( Event.class, 1 );
+//		entityManager.getTransaction( ).begin( );
+//		entityManager.persist(e);
+//		entityManager.getTransaction( ).commit( );
+//	    entityManager.close( );
+	}
+	
 	/**
 	 * Get all events from database
 	 * 

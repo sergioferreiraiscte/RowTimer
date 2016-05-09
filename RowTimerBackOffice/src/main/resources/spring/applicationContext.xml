@@ -24,12 +24,15 @@
 		<property name="persistenceXmlLocation" value="classpath:config/persistence-row-timer.xml" />
 		<property name="persistenceUnitName" value="rowTimerDB" />
 		<property name="dataSource" ref="rowTimerDS" />
+<!-- 		<property name="hibernate.dialect" ref="org.hibernate.dialect.MySQLDialect"/> -->
+		<property name="packagesToScan" value="pt.iscte.moss.row_timer.dao"/>
+		
 
 <!-- 		<property name="packagesToScan" value="pt.iscte.moss.row_timer.dao" /> -->
 		<property name="jpaProperties">
 			<props>
-				<prop key="hibernate.hbm2ddl.auto">create</prop>
-				<prop key="showSql">true</prop>
+<!-- 				<prop key="hibernate.hbm2ddl.auto">create</prop> -->
+<!-- 				<prop key="showSql">true</prop> -->
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="packagesToScan">pt.iscte.moss.row_timer.dao</prop>
 			</props>
