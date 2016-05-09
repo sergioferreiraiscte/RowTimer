@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.example.rowrowapp"
-        minSdkVersion 22
+        applicationId "com.example.joao.facebookloginteste"
+        minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,7 @@ android {
 repositories {
     mavenCentral()
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
