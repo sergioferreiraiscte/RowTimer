@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+input[type=range] {
+	transform: rotate(90deg);
+    width:140px;
+}
+
+.range-container{
+	 height: 150px;
+}
+
+
+input[type=range]+.thumb .value, input[type=range]+.thumb.active .value{
+	color: #26a69a;
+	-webkit-transform: inherit;
+    transform: inherit;
+}
+
+.lights-container{
+	width: 85%;
+}
+
+input[type=range]+.thumb{
+	position: relative;
+	-webkit-transform: inherit;
+    transform: inherit;
+    left: 73px !important;
+    height: 0px !important;
+    width: 30px !important;
+    margin-left: 0px !important;
+    display: flex;
+    top: 50px ! important;
+}
+
+.dim-lights.active {
+    padding-left: 10	px;
+}
+
+th, td {
+	text-align: center;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.lights-button{
+	margin: 0 10px 0 10px;
+	width: 150px;
+}
+
+.edit-form{
+	margin-top: 50px;
+}
+
+.login-form-container{
+	margin-top: 12%;
+	width: 40%;
+}
+
+div#login-table {
+    padding: 30px;
+    border: 4px solid #006799;
+    border-radius: 20px;
+}
+
+.login-logo{
+	width: 250px;
+}
