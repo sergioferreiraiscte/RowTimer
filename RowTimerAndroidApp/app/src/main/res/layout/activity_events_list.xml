@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.rowrowapp.EventsListActivity">
+    tools:context="pt.iscte.row_timer.android.activities.EventsListActivity">
 
     <ListView
         android:id="@+id/listview"

@@ -1,4 +1,4 @@
-package com.example.rowrowapp;
+package pt.iscte.row_timer.android.activities;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

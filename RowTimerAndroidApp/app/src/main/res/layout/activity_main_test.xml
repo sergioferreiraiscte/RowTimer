@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.rowrowapp.MainTestActivity">
+    tools:context="pt.iscte.row_timer.android.activities.MainTestActivity">
 
     <Button
         android:layout_width="wrap_content"
@@ -52,4 +52,16 @@
         android:layout_below="@+id/btnTestRaceMode"
         android:layout_centerHorizontal="true"
         android:onClick="startLoginActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Remote Data"
+        android:id="@+id/btnGetRemoteData"
+        android:layout_marginTop="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnTestLogin"
+        android:layout_alignStart="@+id/btnTestLogin"
+        android:layout_alignEnd="@+id/btnTestLogin"
+        android:onClick="startGetRemoteDataActivity" />
 </RelativeLayout>

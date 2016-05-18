@@ -41,6 +41,7 @@ public class DBService {
 		PreparedStatement s = null;
 		RowingEvent rowingEvent = new RowingEvent();
 		rowingEvent.setId("CNV");
+		rowingEvent.setName("Campeonato Nacional de Velocidade");
 
 		/*
 		try {
