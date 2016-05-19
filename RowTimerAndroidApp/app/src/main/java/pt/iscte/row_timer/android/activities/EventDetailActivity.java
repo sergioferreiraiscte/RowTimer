@@ -1,28 +1,31 @@
 package pt.iscte.row_timer.android.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 public class EventDetailActivity extends AppCompatActivity {
+    private static final String TAG = "EventDetailActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_detail);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setTitle(R.string.title_activity_event_detail);
+    }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+    /**
+     * Clicked to choose to go to referee menu.
+     * When choosed, starts an Intent to execute/show RefereeMenuActivity
+     */
+    public void chooseRefereeMenu(View view) {
+        Log.d(TAG,"Referee menu choosed");
+        Intent gotoRefereeMenu = new Intent(this, RefereeMenuActivity.class);
+        startActivity(gotoRefereeMenu);
     }
 }

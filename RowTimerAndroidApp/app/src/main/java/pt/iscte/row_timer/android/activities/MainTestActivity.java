@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import pt.iscte.row_timer.android.RowTimerApplication;
+
 /**
  * To test actovities independently of others
  */
@@ -16,6 +18,8 @@ public class MainTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_test);
         setTitle(R.string.title_activity_main_test);
+        RowTimerApplication app = (RowTimerApplication)getApplication();
+        app.test = "XPTO";
     }
 
     Intent intent;
@@ -47,6 +51,13 @@ public class MainTestActivity extends AppCompatActivity {
     /** Called when the user clicks the Login button */
     public void startGetRemoteDataActivity(View view) {
         intent = new Intent(this, GetRemoteDataActivity.class);
+        startActivity(intent);
+    }
+
+
+    /** Called when the user clicks the FinishProcedureActivity */
+    public void startFinishProcedureActivity(View view) {
+        intent = new Intent(this, FinishProcedureActivity.class);
         startActivity(intent);
     }
 }

@@ -64,4 +64,15 @@
         android:layout_alignStart="@+id/btnTestLogin"
         android:layout_alignEnd="@+id/btnTestLogin"
         android:onClick="startGetRemoteDataActivity" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Procedure"
+        android:id="@+id/btnFinishProcedure"
+        android:layout_marginTop="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnTestLogin"
+        android:layout_alignStart="@+id/btnTestLogin"
+        android:layout_alignEnd="@+id/btnTestLogin"
+        android:onClick="startFinishProcedureActivity" />
 </RelativeLayout>

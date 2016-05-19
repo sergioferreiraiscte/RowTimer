@@ -5,45 +5,53 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name="pt.iscte.row_timer.android.RowTimerApplication"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.example.pt.iste.row_timer.activities.LoginActivity"
+            android:name=".LoginActivity"
             android:label="LoginActivity" />
         <activity
-            android:name="com.facebook.FacebookActivity"
+            android:name=".FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="com.example.pt.iste.row_timer.activities.EventDetailActivity"
+            android:name=".EventDetailActivity"
             android:label="@string/title_activity_event_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.pt.iste.row_timer.activities.RaceModeActivity"
+            android:name=".RaceModeActivity"
             android:label="RaceModeActivity" />
-        <activity android:name="com.example.pt.iste.row_timer.activities.MainTestActivity">
+        <activity android:name=".MainTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.pt.iste.row_timer.activities.EventsListActivity" />
+        <activity android:name=".EventsListActivity" />
         <activity
-            android:name="com.example.pt.iste.row_timer.activities.GetRemoteDataActivity"
+            android:name=".GetRemoteDataActivity"
             android:label="@string/title_activity_get_remote_data"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RefereeMenuActivity" />
+        <activity
+            android:name=".SynchronizeActivity"
+            android:label="@string/title_activity_synchronize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RaceListActivity" />
+        <activity android:name=".StartProcedureActivity" />
+        <activity android:name=".FinishProcedureActivity"></activity>
     </application>
 
 </manifest>
