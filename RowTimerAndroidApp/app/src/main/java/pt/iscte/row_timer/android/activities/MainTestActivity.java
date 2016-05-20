@@ -8,7 +8,7 @@ import android.view.View;
 import pt.iscte.row_timer.android.RowTimerApplication;
 
 /**
- * To test actovities independently of others
+ * To test activities independently of others
  */
 public class MainTestActivity extends AppCompatActivity {
 
@@ -19,7 +19,6 @@ public class MainTestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_test);
         setTitle(R.string.title_activity_main_test);
         RowTimerApplication app = (RowTimerApplication)getApplication();
-        app.test = "XPTO";
     }
 
     Intent intent;

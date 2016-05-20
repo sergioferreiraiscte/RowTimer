@@ -16,14 +16,17 @@ import pt.iscte.row_timer.android.model.RowingEvent;
 import pt.iscte.row_timer.android.database.RowingEventsDataSource;
 
 /**
- * Created by sergio on 18-05-2016.
+ * Async Task to get remote data from the server
+ * It should be reorganized or break in severall tasks for each remote service to be executed
  */
 public class GetRemoteDataJob extends AsyncTask <String, Void, Boolean>  {
     private static final String TAG = "GetRemoteDataJob";
     private Context context;
+    private OnTaskCompleted listener;
 
-    public GetRemoteDataJob(Context context) {
+    public GetRemoteDataJob(Context context,OnTaskCompleted  listener) {
         this.context = context;
+        this.listener = listener;
     }
 
     @Override
@@ -72,5 +75,10 @@ public class GetRemoteDataJob extends AsyncTask <String, Void, Boolean>  {
         //return receivedStr.toString();
         return true;
 
+    }
+
+    protected void onPostExecute(Long r){
+        // your stuff
+        listener.onTaskCompleted(this);
     }
 }

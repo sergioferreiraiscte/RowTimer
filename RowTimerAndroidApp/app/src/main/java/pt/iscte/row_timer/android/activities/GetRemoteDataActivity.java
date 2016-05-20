@@ -26,7 +26,14 @@ public class GetRemoteDataActivity extends AppCompatActivity {
      */
     public void getRemoteData(View view) {
         Log.d(TAG,"getRemoteData()");
-        new GetRemoteDataJob(this).execute();
+
+        new GetRemoteDataJob(this, new OnTaskCompleted() {
+            @Override
+            public void onTaskCompleted(Object o) {
+                // TODO : Sore data
+                Log.d(TAG,"Callback Executed");
+            }
+        }).execute();
     }
 
 }
