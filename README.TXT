@@ -3,9 +3,14 @@ BackEnd
 =======
 
 Dependencias:
-  maven : 
+  - Java :
+    Versão : 1.8 da Oracle
+  - Maven : 
     Em Linux ubuntu : apt-get install maven
-  eclipse
+  - ApacheTomcat
+  - Eclipse
+    Versão : Mars2
+  - Git
 
 Para importar para eclipse:
   File->Import->Maven->Existing Maven Project
