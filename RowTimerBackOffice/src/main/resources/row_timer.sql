@@ -11,16 +11,17 @@ DROP TABLE IF EXISTS alignment;
 DROP TABLE IF EXISTS boat_type;
 
 CREATE TABLE rowing_event (
-	id VARCHAR(128) PRIMARY KEY,
-	name VARCHAR(128),
-	event_date TIMESTAMP,
-     location VARCHAR(128)
+   id VARCHAR(128) PRIMARY KEY,
+   name VARCHAR(128),
+   event_date TIMESTAMP NULL,
+   change_moment TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   location VARCHAR(128)
 );
 
 CREATE TABLE category (
-	id VARCHAR(20) NOT NULL PRIMARY KEY,
-	name VARCHAR(128),
-	gender CHAR(1)
+   id VARCHAR(20) NOT NULL PRIMARY KEY,
+   name VARCHAR(128),
+   gender CHAR(1)
 );
 
 CREATE TABLE boat_type (

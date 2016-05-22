@@ -1,6 +1,6 @@
 package pt.iscte.row_timer.events;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -11,7 +11,8 @@ import java.util.List;
 public class RowingEvent {
 	String id;
 	String name;
-	LocalDate event_date;
+	Date eventDate;
+	Date changeMoment;
     String location;
     List<Race> eventRaces;
 	public String getId() {
@@ -26,11 +27,11 @@ public class RowingEvent {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public LocalDate getEvent_date() {
-		return event_date;
+	public Date getEventDate() {
+		return eventDate;
 	}
-	public void setEvent_date(LocalDate event_date) {
-		this.event_date = event_date;
+	public void setEventDate(Date event_date) {
+		this.eventDate = event_date;
 	}
 	public String getLocation() {
 		return location;
@@ -44,4 +45,11 @@ public class RowingEvent {
 	public void setEventRaces(List<Race> eventRaces) {
 		this.eventRaces = eventRaces;
 	}
+	public Date getChangeMoment() {
+		return changeMoment;
+	}
+	public void setChangeMoment(Date changeMoment) {
+		this.changeMoment = changeMoment;
+	}
+	
 }

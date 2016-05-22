@@ -1,12 +1,12 @@
 package pt.iscte.row_timer.events;
 
-import java.time.LocalTime;
+import java.util.Date;
 import java.util.List;
 
 public class Race {
 	String eventId;
 	Integer seqno;
-	LocalTime hour;
+	Date hour;
 	BoatType boatType;
 	Category category;
 	List<Alignment> crewAlignment;
@@ -22,10 +22,10 @@ public class Race {
 	public void setSeqno(Integer seqno) {
 		this.seqno = seqno;
 	}
-	public LocalTime getHour() {
+	public Date getHour() {
 		return hour;
 	}
-	public void setHour(LocalTime hour) {
+	public void setHour(Date hour) {
 		this.hour = hour;
 	}
 	public BoatType getBoatType() {

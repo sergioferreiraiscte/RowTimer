@@ -2,18 +2,26 @@ package pt.iscte.row_timer.events;
 
 public class CrewMember {
 	String crewId;
-	Person personId;
+	Integer position;
+	Person person;
 	public String getCrewId() {
 		return crewId;
 	}
 	public void setCrewId(String crewId) {
 		this.crewId = crewId;
 	}
-	public Person getPersonId() {
-		return personId;
+	public Person getPerson() {
+		return person;
 	}
-	public void setPersonId(Person personId) {
-		this.personId = personId;
+	public void setPerson(Person personId) {
+		this.person = personId;
 	}
+	public Integer getPosition() {
+		return position;
+	}
+	public void setPosition(Integer position) {
+		this.position = position;
+	}
+	
 
 }

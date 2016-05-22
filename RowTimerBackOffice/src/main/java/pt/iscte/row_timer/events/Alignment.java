@@ -1,15 +1,15 @@
 package pt.iscte.row_timer.events;
 
 public class Alignment {
-	String event_id;
+	String eventId;
 	Integer lane;
 	Crew crew;
 	Integer RaceNo; 
-	public String getEvent_id() {
-		return event_id;
+	public String getEventId() {
+		return eventId;
 	}
-	public void setEvent_id(String event_id) {
-		this.event_id = event_id;
+	public void setEventId(String event_id) {
+		this.eventId = event_id;
 	}
 	public Integer getLane() {
 		return lane;

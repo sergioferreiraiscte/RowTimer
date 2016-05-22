@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Crew {
 	String id;
-	Competitor competitorId;
+	Competitor competitor;
 	String description;
 	List<CrewMember> crewMembers;
 	public String getId() {
@@ -13,11 +13,11 @@ public class Crew {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public Competitor getCompetitorId() {
-		return competitorId;
+	public Competitor getCompetitor() {
+		return competitor;
 	}
-	public void setCompetitorId(Competitor competitorId) {
-		this.competitorId = competitorId;
+	public void setCompetitor(Competitor competitor) {
+		this.competitor = competitor;
 	}
 	public String getDescription() {
 		return description;
