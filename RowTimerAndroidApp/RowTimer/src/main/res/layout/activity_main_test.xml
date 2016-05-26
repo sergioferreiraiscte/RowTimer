@@ -7,70 +7,111 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pt.iscte.row_timer.android.activities.MainTestActivity">
+    android:background="@color/bluePrimary"
+    tools:context="pt.iscte.row_timer.android.activities.MainTestActivity"
+    android:screenOrientation="portrait"
+    >
 
-    <Button
+    <!--
+    <ImageView
+        android:src="@drawable/bg_06"
+        android:scaleType = "centerCrop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EVENTS LIST"
-        android:id="@+id/btnTestEventsList"
-        android:layout_marginTop="80dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true" />
+    -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:minWidth="200dp"
-        android:onClick="startEventsListActivity"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EVENT DETAIL"
-        android:id="@+id/btnTestEventDetail"
-        android:layout_marginTop="10dp"
-        android:minWidth="200dp"
-        android:layout_below="@+id/btnTestEventsList"
-        android:layout_centerHorizontal="true"
-        android:onClick="startEventDetailActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RACE MODE"
-        android:id="@+id/btnTestRaceMode"
-        android:layout_marginTop="10dp"
-        android:minWidth="200dp"
-        android:layout_below="@+id/btnTestEventDetail"
-        android:layout_centerHorizontal="true"
-        android:onClick="startRaceModeActivity"/>
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
         android:id="@+id/btnTestLogin"
-        android:layout_marginTop="10dp"
-        android:minWidth="200dp"
-        android:layout_below="@+id/btnTestRaceMode"
+        android:onClick="startLoginActivity"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:onClick="startLoginActivity"/>
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Remote Data"
-        android:id="@+id/btnGetRemoteData"
-        android:layout_marginTop="10dp"
-        android:minWidth="200dp"
-        android:layout_below="@+id/btnTestLogin"
-        android:layout_alignStart="@+id/btnTestLogin"
-        android:layout_alignEnd="@+id/btnTestLogin"
-        android:onClick="startGetRemoteDataActivity" />
+        android:text="EVENTS LIST"
+        android:id="@+id/btnTestEventsList"
+        android:onClick="startEventsListActivity"
+
+        android:layout_above="@+id/btnTestLogin"
+        android:layout_marginBottom="15dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finish Procedure"
+        android:text="test EVENT DETAIL"
+        android:id="@+id/btnTestEventDetail"
+        android:minWidth="200dp"
+        android:layout_marginTop="50dp"
+        android:onClick="startEventDetailActivity"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignStart="@+id/btnTestRaceMode"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test RACE MODE"
+        android:id="@+id/btnTestRaceMode"
+        android:layout_marginTop="10dp"
+        android:minWidth="200dp"
+        android:layout_below="@+id/btnTestEventDetail"
+        android:layout_centerHorizontal="true"
+        android:onClick="startRaceModeActivity"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test Get Remote Data"
+        android:id="@+id/btnGetRemoteData"
+        android:layout_marginTop="10dp"
+        android:minWidth="200dp"
+        android:onClick="startGetRemoteDataActivity"
+        android:layout_below="@+id/btnTestRaceMode"
+        android:layout_alignStart="@+id/btnTestRaceMode"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test Finish Procedure"
         android:id="@+id/btnFinishProcedure"
         android:minWidth="200dp"
+        android:layout_marginTop="10dp"
         android:onClick="startFinishProcedureActivity"
         android:layout_below="@+id/btnGetRemoteData"
-        android:layout_alignStart="@+id/btnGetRemoteData" />
+        android:layout_centerHorizontal="true"
+        />
+    -->
+
 </RelativeLayout>

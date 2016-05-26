@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rowing Events Timer App</string>
+    <string name="app_name">RowTimer</string>
 
     <string name="title_activity_event_list">Events List</string>
     <string name="title_activity_login">Login</string>

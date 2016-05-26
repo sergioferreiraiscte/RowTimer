@@ -7,17 +7,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/tvLogin"
-        android:id="@+id/textView"
-        android:layout_marginTop="55dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tvUser"
+        android:id="@+id/tvUser"
+        android:layout_above="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        android:ems="10"
+        android:id="@+id/etUserName"
+        android:layout_above="@+id/tvPassword"
+        android:layout_alignStart="@+id/tvPassword"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tvPassword"
+        android:id="@+id/tvPassword"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,51 +48,41 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="User Name"
-        android:ems="10"
-        android:id="@+id/etUserName"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/etPassword"
-        android:layout_marginTop="52dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btLogin"
         android:id="@+id/btLogin"
         android:layout_below="@+id/etPassword"
+        android:layout_marginTop="40dp"
+
+        android:minWidth="300dp"
+        android:background="#28ffffff"
+        android:textColor="#7bc1f7"
+        android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/tvUser"
-        android:id="@+id/tvUser"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/etUserName"
-        android:layout_marginTop="23dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/tvPassword"
-        android:id="@+id/tvPassword"
-        android:layout_above="@+id/etPassword"
-        android:layout_alignStart="@+id/etPassword" />
+     />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
+        android:layout_marginTop="41dp"
+
+        android:minWidth="300dp"
+        android:background="#28ffffff"
+        android:textColor="#7bc1f7"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
