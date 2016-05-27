@@ -9,4 +9,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pt.iscte.row_timer.android.activities.FinishProcedureActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/finish_alignment"
+            android:layout_width="fill_parent"
+            android:layout_height="346dp"
+            android:choiceMode="none" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark Arrival"
+            android:id="@+id/btnFinishRace"
+            android:onClick="markCrewArrival" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/btnDone"
+            android:onClick="done" />
+    </LinearLayout>
+
 </RelativeLayout>

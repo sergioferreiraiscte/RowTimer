@@ -10,6 +10,7 @@ import pt.iscte.row_timer.android.activities.EventsListActivity;
 import pt.iscte.row_timer.android.activities.GetRemoteDataJob;
 import pt.iscte.row_timer.android.activities.OnTaskCompleted;
 import pt.iscte.row_timer.android.database.RowingEventsDataSource;
+import pt.iscte.row_timer.android.model.Race;
 import pt.iscte.row_timer.android.model.RowingEvent;
 import pt.iscte.row_timer.android.synchronization.ConnectionUtil;
 import pt.iscte.row_timer.android.synchronization.DataSynchronizationJob;
@@ -23,11 +24,12 @@ public class RowTimerApplication extends Application {
     private static final String TAG = "RowTimerApplication";
     private List<RowingEvent> eventList;
     private RowingEvent currentEvent;
+    private Race currentRace;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        if ( !ConnectionUtil.haveNetworkConnection(this) )
+        if ( ConnectionUtil.haveNetworkConnection(this) )
           synchronizeRemoteEventList();
         else
           getLocalEventList();
@@ -70,5 +72,13 @@ public class RowTimerApplication extends Application {
 
     public void setEventList(List<RowingEvent> eventList) {
         this.eventList = eventList;
+    }
+
+    public Race getCurrentRace() {
+        return currentRace;
+    }
+
+    public void setCurrentRace(Race currentRace) {
+        this.currentRace = currentRace;
     }
 }

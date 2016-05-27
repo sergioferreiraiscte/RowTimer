@@ -11,11 +11,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 import java.util.List;
 
 import pt.iscte.row_timer.android.activities.OnTaskCompleted;
 import pt.iscte.row_timer.android.database.RowingEventsDataSource;
+import pt.iscte.row_timer.android.model.Result;
 import pt.iscte.row_timer.android.model.RowingEvent;
+import pt.iscte.row_timer.android.model.StartRace;
 
 /**
  * Created by sergio on 21-05-2016.
@@ -26,6 +29,9 @@ public class DataSynchronizationJob extends AsyncTask<String, Void, Boolean> {
     private OnTaskCompleted listener;
     public static final int GET_EVENT_LIST = 0;
     public static final int GET_EVENT = 1;
+    public static final int UPDATE_START_TIMES = 2;
+    public static final int UPDATE_RESULTS = 3;
+    public static final int MARK_START_OF_RACE = 4;
     private Integer action;
 
     private String eventId;
@@ -57,8 +63,21 @@ public class DataSynchronizationJob extends AsyncTask<String, Void, Boolean> {
                     database.insertRowingEventList(events);
                     break;
                 case GET_EVENT:
-                    event = exec.getEventData(eventId);
-                    database.synchronizeEvent(event);
+                    Date lastPull = database.getPulledDate(eventId);
+                    event = exec.getEventData(eventId,lastPull);
+                    if ( event == null) {
+                        database.open();
+                        event = database.readRowingEvent(eventId);
+                        database.close();
+                    } else
+                        database.synchronizeEvent(event);
+                    break;
+                case UPDATE_START_TIMES:
+
+                    break;
+                case UPDATE_RESULTS:
+                    List<Result> results = database.readResults(eventId);
+                    exec.sendResults(eventId,results);
                     break;
             }
         } catch (Exception e) {
@@ -81,6 +100,10 @@ public class DataSynchronizationJob extends AsyncTask<String, Void, Boolean> {
                 break;
             case GET_EVENT:
                 listener.onTaskCompleted(event);
+                break;
+            case UPDATE_START_TIMES:
+            case UPDATE_RESULTS:
+                listener.onTaskCompleted(null);
                 break;
         }
 

@@ -10,6 +10,7 @@ public class Race {
     Date hour;
     BoatType boatType;
     Category category;
+    Date startTime;
     List<Alignment> crewAlignment;
     public String getEventId() {
         return eventId;
@@ -48,4 +49,11 @@ public class Race {
         this.crewAlignment = crewAlignment;
     }
 
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
 }

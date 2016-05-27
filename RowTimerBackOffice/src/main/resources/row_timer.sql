@@ -35,6 +35,7 @@ CREATE TABLE race (
   hour TIMESTAMP,
   boat_type CHAR(10) REFERENCES boat_type(boat_id),
   category VARCHAR(20) REFERENCES category(id),
+  start_time TIMESTAMP,
   PRIMARY KEY (event_id,seqno)
 );
 
@@ -65,5 +66,6 @@ CREATE TABLE alignment (
   event_id VARCHAR(128) REFERENCES rowing_event (id),
   race_no INTEGER, 
   lane INTEGER,
-  crew VARCHAR(20) REFERENCES crew(id)
+  crew VARCHAR(20) REFERENCES crew(id),
+  end_time TIMESTAMP
 );

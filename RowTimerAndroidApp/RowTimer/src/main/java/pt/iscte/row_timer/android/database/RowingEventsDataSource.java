@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import pt.iscte.row_timer.android.model.Alignment;
@@ -17,7 +18,9 @@ import pt.iscte.row_timer.android.model.Crew;
 import pt.iscte.row_timer.android.model.CrewMember;
 import pt.iscte.row_timer.android.model.Person;
 import pt.iscte.row_timer.android.model.Race;
+import pt.iscte.row_timer.android.model.Result;
 import pt.iscte.row_timer.android.model.RowingEvent;
+import pt.iscte.row_timer.android.model.StartRace;
 
 /**
  * Class that handles local (adnroid) database interaction
@@ -49,9 +52,13 @@ public class RowingEventsDataSource {
      */
     public void synchronizeEvent(RowingEvent rowingEvent) {
         Log.d(TAG,"synchronizeEvent()");
+        if (rowingEvent == null)
+            return;
         open();
         RowingEvent existingRowingEvent = readRowingEvent(rowingEvent.getId());
-        deleteRowingEventTree(existingRowingEvent);
+        if ( existingRowingEvent != null ) {
+            deleteRowingEventTree(existingRowingEvent);
+        }
         createRowingEventTree(rowingEvent);
         close();
     }
@@ -153,9 +160,7 @@ public class RowingEventsDataSource {
         if (rowingEvent.getEventDate() != null) {
             values.put("event_date", rowingEvent.getEventDate().toString());
         }
-        if (rowingEvent.getChangeMoment() != null) {
-            values.put("change_moment", rowingEvent.getChangeMoment().toString());
-        }
+        values.put("change_moment",new Date().getTime());
         values.put("location", rowingEvent.getLocation());
 
         long lastId = db.insert("rowing_event",null, values);
@@ -181,30 +186,38 @@ public class RowingEventsDataSource {
 
         Cursor c = db.rawQuery("SELECT * FROM rowing_event WHERE id = '" + eventId + "'", null);
 
-        if(c.getCount() == 0)
+        if(c.getCount() == 0) {
+            c.close();
             return null;
+        }
 
         c.moveToFirst();
         RowingEvent rowingEvent = new RowingEvent();
 
         rowingEvent.setId(c.getString(c.getColumnIndex("id")));
         rowingEvent.setName(c.getString(c.getColumnIndex("name")));
-        // TODO : Fix the dates
-        // rowingEvent.setEventDate(c.getString(c.getColumnIndex("event_date")));
-        // rowingEvent.setChangeMoment(c.getString(c.getColumnIndex("hange_moment")));
+        rowingEvent.setEventDate(new Date(c.getLong(c.getColumnIndex("event_date"))));
+        rowingEvent.setChangeMoment(new Date(c.getLong(c.getColumnIndex("change_moment"))));
         rowingEvent.setLocation(c.getString(c.getColumnIndex("location")));
         rowingEvent.setEventRaces(readRaces(eventId));
         c.close();
         return rowingEvent;
     }
 
+    public Date getPulledDate(String eventId) {
+        open();
+        RowingEvent rowingEvent = readRowingEvent(eventId);
+        close();
+        return rowingEvent.getChangeMoment();
+    }
+
     public List<RowingEvent> readRowingEventList() {
         Log.d(TAG,"readRowingEventList()");
 
-
+        open();
         ArrayList<RowingEvent> rowingEvents = new ArrayList<RowingEvent>();
         Cursor c = db.rawQuery(
-                "SELECT * FROM rowingEvent order by event_date ",
+                "SELECT * FROM rowing_event order by event_date ",
                 null);
 
         if(c.getCount() == 0)
@@ -221,6 +234,7 @@ public class RowingEventsDataSource {
             rowingEvents.add(rowingEvent);
         }
         c.close();
+        close();
         return rowingEvents;
     }
 
@@ -230,18 +244,20 @@ public class RowingEventsDataSource {
      * @param rowingEvents
      */
     public void insertRowingEventList(List<RowingEvent> rowingEvents) {
+        open();
         for (RowingEvent rowingEvent : rowingEvents) {
             if ( !existRowingEvent(rowingEvent.getId()))  {
                 createRowingEvent(rowingEvent);
             }
         }
+        close();
     }
 
     public Boolean existRowingEvent(String eventId) {
         Log.d(TAG,"existRowingEvent()");
 
         Boolean retval = false;
-        Cursor c = db.rawQuery("SELECT * FROM rowing_event WHERE boat_id = '" + eventId + "'", null);
+        Cursor c = db.rawQuery("SELECT * FROM rowing_event WHERE id = '" + eventId + "'", null);
 
         if(c.getCount() > 0)
             retval = true;
@@ -315,6 +331,45 @@ public class RowingEventsDataSource {
         int result = db.delete("race", "event_id=?", new String[] { eventId });
     }
 
+    public void markStartOfRace(Race race) {
+        open();
+        ContentValues data=new ContentValues();
+        data.put("start_time",race.getStartTime().getTime());
+        db.update("race", data, "event_id='" + race.getEventId() + "' and seqno=" + race.getSeqno(), null);
+        close();
+    }
+
+
+
+    /**
+     * Read the start times stored by start referee
+     *
+     * TODO : Optimize to only send what was not sent
+     * @param eventId
+     * @return
+     */
+    public List<StartRace> readStartTimes(String eventId) {
+        Log.d(TAG,"readStartTimes()");
+
+        open();
+        ArrayList<StartRace> startRaces = new ArrayList<StartRace>();
+        Cursor c = db.rawQuery("SELECT * FROM race WHERE event_id = '" + eventId + "' AND start_time IS NOT NULL", null);
+
+        if(c.getCount() == 0)
+            return null;
+
+        for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
+            StartRace startRace = new StartRace();
+
+            startRace.setEventId(c.getString(c.getColumnIndex("event_id")));
+            startRace.setRaceno(c.getInt(c.getColumnIndex("seqno")));
+            startRace.setStartMoment(new Date(c.getLong(c.getColumnIndex("start_time"))));
+            startRaces.add(startRace);
+        }
+        c.close();
+        close();
+        return startRaces;
+    }
 
     // Alignment
 
@@ -372,6 +427,54 @@ public class RowingEventsDataSource {
 
     public void deleteAlignment(String eventId) {
         int result = db.delete("alignment", "event_id=?", new String[] { eventId });
+    }
+
+    public void storeResults(Race race) {
+        open();
+
+        for (Alignment lane : race.getCrewAlignment()) {
+            if ( lane.getEndTime() == null )
+                continue;
+            ContentValues data=new ContentValues();
+            data.put("end_time", lane.getEndTime().getTime());
+            db.update("alignment", data,
+                    "event_id='" + race.getEventId() + "' and race_no=" + race.getSeqno() + " and lane=" + lane.getLane(),
+                    null);
+        }
+        close();
+    }
+
+    /**
+     * Read the results stored by arrival referee
+     *
+     * TODO : Optimize to only send what was not sent
+     * @param eventId
+     * @return
+     */
+    public List<Result> readResults(String eventId) {
+        Log.d(TAG,"readStartTimes()");
+
+        open();
+        ArrayList<Result> results = new ArrayList<Result>();
+        Cursor c = db.rawQuery("SELECT * FROM alignment WHERE event_id = '" + eventId + "' AND end_time IS NOT NULL",
+                null);
+
+        if(c.getCount() == 0)
+            return null;
+
+        for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
+            Result result = new Result();
+
+            result.setEvent_id(c.getString(c.getColumnIndex("event_id")));
+            result.setRaceno(c.getInt(c.getColumnIndex("race_no")));
+            result.setLane(c.getInt(c.getColumnIndex("lane")));
+            result.setCrewId(c.getString(c.getColumnIndex("crew")));
+            result.setFinishTime(new Date(c.getLong(c.getColumnIndex("end_time"))));
+            results.add(result);
+        }
+        c.close();
+        close();
+        return results;
     }
 
 
@@ -490,7 +593,7 @@ public class RowingEventsDataSource {
         Log.d(TAG,"existCategory()");
 
         Boolean retval = false;
-        Cursor c = db.rawQuery("SELECT * FROM category WHERE category_id = '" + categoryId + "'", null);
+        Cursor c = db.rawQuery("SELECT * FROM category WHERE id = '" + categoryId + "'", null);
 
         if(c.getCount() > 0)
             retval = true;

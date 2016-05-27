@@ -31,18 +31,18 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Upload"
+        android:text="Upload Start Times"
         android:id="@+id/btnUpload"
         android:layout_below="@+id/btnFinish"
         android:layout_alignStart="@+id/btnFinish"
-        android:onClick="chooseUpload" />
+        android:onClick="chooseUploadStartRaces" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Download"
-        android:id="@+id/btnDownload"
+        android:text="Upload Results"
+        android:id="@+id/btnUploadResults"
         android:layout_below="@+id/btnUpload"
         android:layout_centerHorizontal="true"
-        android:onClick="chooseDownload" />
+        android:onClick="chooseUploadResults" />
 </RelativeLayout>

@@ -1,11 +1,14 @@
 package pt.iscte.row_timer.android.model;
 
 
+import java.util.Date;
+
 public class Alignment {
     String eventId;
     Integer lane;
     Crew crew;
     Integer RaceNo;
+    Date endTime;
     public String getEventId() {
         return eventId;
     }
@@ -29,6 +32,14 @@ public class Alignment {
     }
     public void setRaceNo(Integer raceNo) {
         RaceNo = raceNo;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
     }
 }
 

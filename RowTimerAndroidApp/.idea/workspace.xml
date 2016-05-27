@@ -9,155 +9,38 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249d25ba-986c-4bea-b471-0feaf3bca36b" name="Default" comment="New big version. A lot of things done">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/customtabs_23_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_12_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/androidTest/java/pt/iscte/row_timer/android/activities/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/Event.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/MainTestActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/OnTaskCompleted.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceModeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/SynchronizeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/BoatType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Competitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Crew.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/CrewMember.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/RowingEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ConnectionUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronization.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_event_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_get_remote_data.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_mode.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_synchronize.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_event_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_get_remote_data.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_synchronize.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/menu/menu_event_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values-v21/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values-w820dp/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/test/java/pt/iscte/row_timer/android/activities/ExampleUnitTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/customtabs_23_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_11_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/pt/iscte/row_timer/android/activities/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/Event.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataJob.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/MainTestActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/OnTaskCompleted.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/RaceModeActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/activities/SynchronizeActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/model/RowingEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronization.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_events_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_finish_procedure.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_remote_data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_race_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_race_mode.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_referee_menu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_start_procedure.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_synchronize.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_event_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_get_remote_data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_synchronize.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/event_list_row.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_event_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/test/java/pt/iscte/row_timer/android/activities/ExampleUnitTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="249d25ba-986c-4bea-b471-0feaf3bca36b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureArrayAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureArrayAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Result.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/StartRace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceStartJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateResultsJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateStartTimesJob.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/build.gradle" afterPath="$PROJECT_DIR$/RowTimer/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/.settings/org.eclipse.jdt.core.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/beans/DBService.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/beans/DBService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/beans/RowTimerException.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/beans/RowTimerException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Alignment.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Alignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Crew.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Crew.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/CrewMember.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/CrewMember.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Race.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Race.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/RowingEvent.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/RowingEvent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/services/RowTimerService.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/services/RowTimerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/resources/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/resources/row_timer.sql" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/resources/row_timer.sql" />
     </list>
     <ignored path="RowTimerAndroidApp.iws" />
@@ -187,7 +70,38 @@
     <favorites_list name="RowTimerAndroidApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FinishProcedureActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaceFinishJob.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RowingEventsDataSource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.093877554">
+              <caret line="443" column="16" selection-start-line="443" selection-start-column="16" selection-end-line="443" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1565,7 +1479,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4390849104540" />
+        <entry key="$PROJECT_DIR$" value="4391384712729" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1957,32 +1871,51 @@
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerException.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/BoatType.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Category.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/CrewMember.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Person.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Competitor.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Crew.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_test.xml" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/RowingEvent.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataJob.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/Connection.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ConnectionUtil.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Result.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/StartRace.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureArrayAdapter.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceStartJob.java" />
+        <option value="$PROJECT_DIR$/RowTimer/build.gradle" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateStartTimesJob.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureArrayAdapter.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateResultsJob.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3926" />
-    <option name="y" value="66" />
-    <option name="width" value="1766" />
-    <option name="height" value="1000" />
+    <option name="x" value="1383" />
+    <option name="y" value="97" />
+    <option name="width" value="1590" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -2009,15 +1942,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="RowTimerAndroidApp" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2028,6 +1965,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="RowTimer" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimerAndroidApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2060,6 +2019,50 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="android" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimerAndroidApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="synchronization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimerAndroidApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2084,9 +2087,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimerAndroidApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2094,6 +2107,12 @@
     <property name="device.picker.selection" value="Nexus_5X_API_23" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pt.iscte.row_timer.android.synchronization" />
+      <recent name="pt.iscte.row_timer.android.activities" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.RowTimer">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2404,39 +2423,56 @@
       <option name="number" value="Default" />
       <updated>1463775942491</updated>
     </task>
+    <task id="LOCAL-00001" summary="New big version. A lot of things done">
+      <created>1463951818028</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1463951818028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="3926" y="66" width="1766" height="1000" extended-state="0" />
+    <frame x="1383" y="97" width="1590" height="957" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.49222797" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.49481866" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37785387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3757503" sideWeight="0.16256477" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3757503" sideWeight="0.83743525" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34453782" sideWeight="0.4974093" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1994186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30893782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39954337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39735895" sideWeight="0.85751295" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283679" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2451,30 +2487,77 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New big version. A lot of things done" />
+    <option name="LAST_COMMIT_MESSAGE" value="New big version. A lot of things done" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java</url>
-          <line>74</line>
+          <url>file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java</url>
+          <line>32</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="RowTimer">
-        <watch expression="rowingEvent" />
+        <watch expression="strURL" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="e#2512#2776#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+            <element signature="e#3429#3693#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+          <folding>
+            <element signature="e#1549#1769#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/MainTestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2482,14 +2565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#502#520#0" expanded="true" />
-            <element signature="e#770#795#0" expanded="true" />
-            <element signature="e#1090#1108#0" expanded="true" />
-            <element signature="e#1276#1313#0" expanded="true" />
-            <element signature="e#1910#1950#0" expanded="true" />
-            <element signature="e#2159#2195#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2497,12 +2573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19503546">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2510,22 +2580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16423358">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="e#502#520#0" expanded="true" />
-            <element signature="e#770#795#0" expanded="true" />
-            <element signature="e#1090#1108#0" expanded="true" />
-            <element signature="e#1276#1313#0" expanded="true" />
-            <element signature="e#1910#1950#0" expanded="true" />
-            <element signature="e#2159#2195#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2533,16 +2587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28368795">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#162#163#0" expanded="false" />
-            <element signature="e#205#206#0" expanded="false" />
-            <element signature="e#241#242#0" expanded="false" />
-            <element signature="e#271#272#0" expanded="false" />
-            <element signature="e#298#299#0" expanded="false" />
-            <element signature="e#337#338#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2550,20 +2594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42553192">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#144#145#0" expanded="false" />
-            <element signature="e#169#170#0" expanded="false" />
-            <element signature="e#204#205#0" expanded="false" />
-            <element signature="e#232#233#0" expanded="false" />
-            <element signature="e#262#263#0" expanded="false" />
-            <element signature="e#289#290#0" expanded="false" />
-            <element signature="e#328#329#0" expanded="false" />
-            <element signature="e#360#361#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#421#422#0" expanded="false" />
-            <element signature="e#464#465#0" expanded="false" />
-            <element signature="e#500#501#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2571,16 +2601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31914893">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#123#124#0" expanded="false" />
-            <element signature="e#148#149#0" expanded="false" />
-            <element signature="e#183#184#0" expanded="false" />
-            <element signature="e#211#212#0" expanded="false" />
-            <element signature="e#241#242#0" expanded="false" />
-            <element signature="e#268#269#0" expanded="false" />
-            <element signature="e#307#308#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2588,20 +2608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4787234">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#188#189#0" expanded="false" />
-            <element signature="e#231#232#0" expanded="false" />
-            <element signature="e#267#268#0" expanded="false" />
-            <element signature="e#299#300#0" expanded="false" />
-            <element signature="e#328#329#0" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
-            <element signature="e#477#478#0" expanded="false" />
-            <element signature="e#525#526#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2609,20 +2615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4432624">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#147#148#0" expanded="false" />
-            <element signature="e#172#173#0" expanded="false" />
-            <element signature="e#207#208#0" expanded="false" />
-            <element signature="e#235#236#0" expanded="false" />
-            <element signature="e#265#266#0" expanded="false" />
-            <element signature="e#292#293#0" expanded="false" />
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#363#364#0" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#471#472#0" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2651,74 +2643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035460994">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#173#174#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-            <element signature="e#249#250#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-            <element signature="e#319#320#0" expanded="false" />
-            <element signature="e#346#347#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#418#419#0" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#510#511#0" expanded="false" />
-            <element signature="e#542#543#0" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#648#649#0" expanded="false" />
-            <element signature="e#679#680#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20212767">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#277#278#0" expanded="false" />
-            <element signature="e#307#308#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#422#423#0" expanded="false" />
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#492#493#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#581#582#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#650#651#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#806#807#0" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#873#874#0" expanded="false" />
-            <element signature="e#922#923#0" expanded="false" />
-            <element signature="e#962#963#0" expanded="false" />
-            <element signature="e#1010#1011#0" expanded="false" />
-            <element signature="e#1046#1047#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_test.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2726,7 +2650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41749504">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2734,28 +2657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53763443">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/sergio/ExtraStorage/opt/android-sdk-linux/sources/android-23/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33206832">
-          <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#27079#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48924732">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2763,64 +2664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70430106">
           <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/RowingEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75268817">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-          <folding>
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27961165">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2650#2651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4776699">
-          <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
-          <folding>
-            <element signature="e#1028#1062#0" expanded="true" />
-            <element signature="e#1828#3804#0" expanded="true" />
-            <element signature="e#2587#3456#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3803#3804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75728154">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-          <folding>
-            <element signature="e#1474#1694#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2189#2190#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2829,40 +2672,324 @@
         <state vertical-scroll-proportion="0.34951457">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java">
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69008267">
-          <caret line="230" column="7" selection-start-line="230" selection-start-column="7" selection-end-line="230" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6631#6644#0" expanded="true" />
-            <element signature="e#9154#9160#0" expanded="true" />
-            <element signature="e#11050#11061#0" expanded="true" />
-            <element signature="e#19246#19258#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.85106385">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/StartRace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5673759">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23300971">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.51195216">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/RowingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#394#395#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6363635">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7244898">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+          <folding>
+            <element signature="e#1248#1249#0" expanded="false" />
+            <element signature="e#1296#1297#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5283017">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03253796">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceStartJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.010204081">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/sergio/ExtraStorage/opt/android-sdk-linux/sources/android-23/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/sergio/ExtraStorage/opt/android-sdk-linux/sources/android-23/com/android/internal/os/LoggingPrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4489796">
+          <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/OnTaskCompleted.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18367347">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6122449">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#1549#1769#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
+          <folding>
+            <element signature="e#2587#3163#0" expanded="true" />
+            <element signature="e#3162#3163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateStartTimesJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6363635">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7346939">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63265306">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateResultsJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+          <folding>
+            <element signature="e#2512#2776#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+            <element signature="e#3429#3693#0" expanded="true" />
+            <element signature="e#3692#3693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86206895">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23883495">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.45510203">
+          <caret line="185" column="30" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6020408">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2087#2351#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8965517">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#272#305#0" expanded="false" />
+            <element signature="e#330#365#0" expanded="false" />
+            <element signature="e#391#426#0" expanded="false" />
+            <element signature="e#450#483#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5510204">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.093877554">
+          <caret line="443" column="16" selection-start-line="443" selection-start-column="16" selection-end-line="443" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

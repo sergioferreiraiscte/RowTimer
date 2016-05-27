@@ -1,5 +1,7 @@
 package pt.iscte.row_timer.services;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -23,7 +25,9 @@ import org.springframework.stereotype.Service;
 
 import pt.iscte.row_timer.beans.DBService;
 import pt.iscte.row_timer.beans.RowTimerException;
+import pt.iscte.row_timer.events.Result;
 import pt.iscte.row_timer.events.RowingEvent;
+import pt.iscte.row_timer.events.StartRace;
 
 /**
  * REST Services to get information about events
@@ -80,16 +84,18 @@ public class RowTimerService {
 	@GET
 	@Path("/event/{id}")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-	public Response event(@PathParam("id") String eventId, @QueryParam("pulled") String pulled) {
+	public Response event(@PathParam("id") String eventId, @QueryParam("pulled") Long lastPullDate) {
 		if ( logger.isDebugEnabled()) {
-			logger.debug("/api/event/id - Get event by ID " + eventId + " and filter (pulled date:" + pulled + ") called " );
+			logger.debug("/api/event/id - Get event by ID " + eventId + " and filter (pulled date:" + new Date(lastPullDate) + ") called " );
 		}
 
 		RowingEvent rowingEvent = null;
 		try {
 			String filter = null;
-			if ( pulled != null ) { 
-			   filter = " change_moment > '" + pulled + "'";
+			if ( lastPullDate != null ) { 
+			   SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss.S");
+			   String strDate = sdf.format(new Date(lastPullDate)); 
+			   filter = " change_moment > '" + strDate + "'";
 			}
 			rowingEvent = dbService.selectEvent(eventId,filter);
 		} catch (RowTimerException rte) {
@@ -105,23 +111,51 @@ public class RowTimerService {
 	}
 
 	/**
-	 * Store the results related to an event
-	 * TODO : Implement the logic
+	 * Store the start times related top an event. This will be executed with the information of 
+	 * the start referee.
+	 * 
 	 * @return
 	 */
 	@POST
-	@Path("/event/{id}")
+	@Path("/event/{id}/start/times")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response storeEvent(@PathParam("id") String eventId) {
+	public Response storeStartTimes(@PathParam("id") String eventId, List<StartRace> startTimes) {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("/api/event/id - Get event by ID called");
 		}
 
 		RowingEvent rowingEvent = null;
 		try {
-			rowingEvent = dbService.selectEvent(eventId);
+			dbService.updateStartTimes(eventId,startTimes);
 		} catch (Exception e) {
-			logger.error("Error getting event : ",e);
+			logger.error("Error saving start times : ",e);
+			ResponseBuilder response = Response.serverError();
+			return response.build();
+		}
+
+		ResponseBuilder response = Response.ok((Object) rowingEvent );
+		return response.build();
+	}
+	
+	/**
+	 * Store the results related to an event. This will be executed with the information of 
+	 * the finish referee.
+	 * 	
+	 * @return
+	 */
+	@POST
+	@Path("/event/{id}/arrival/times")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response storeResults(@PathParam("id") String eventId, List<Result> results) {
+		if ( logger.isDebugEnabled()) {
+			logger.debug("/api/event/id/finish/times - Get event by ID called");
+		}
+
+		RowingEvent rowingEvent = null;
+		try {
+			dbService.updateResults(eventId,results);
+		} catch (Exception e) {
+			logger.error("Error saving start times : ",e);
 			ResponseBuilder response = Response.serverError();
 			return response.build();
 		}

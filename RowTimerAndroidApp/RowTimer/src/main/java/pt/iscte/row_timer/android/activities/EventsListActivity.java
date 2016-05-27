@@ -63,13 +63,6 @@ public class EventsListActivity extends AppCompatActivity {
                                 @Override
                                 public void onTaskCompleted(Object o) {
                                     Log.d(TAG, "onTaskCompleted()");
-                            /*
-                            try {
-                                Thread.sleep(100);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                            */
                                     rowingEvent = (RowingEvent) o;
                                     // TODO : Check if rowing event is saved as current on application
                                     ringProgressDialog.dismiss();
@@ -106,6 +99,8 @@ public class EventsListActivity extends AppCompatActivity {
      */
     public void chooseEvent(String eventID) {
         Log.d(TAG, "Event choosed : " + eventID);
+        RowTimerApplication application = (RowTimerApplication) getApplication();
+        application.setCurrentEvent(rowingEvent);
         Intent gotoEventDetail = new Intent(this, EventDetailActivity.class);
         startActivity(gotoEventDetail);
     }

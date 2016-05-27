@@ -5,9 +5,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.dbcp.BasicDataSource;
@@ -21,7 +21,9 @@ import pt.iscte.row_timer.events.Crew;
 import pt.iscte.row_timer.events.CrewMember;
 import pt.iscte.row_timer.events.Person;
 import pt.iscte.row_timer.events.Race;
+import pt.iscte.row_timer.events.Result;
 import pt.iscte.row_timer.events.RowingEvent;
+import pt.iscte.row_timer.events.StartRace;
 
 /**
  * Database access to information about the devices and controllers
@@ -73,8 +75,8 @@ public class DBService {
 				RowingEvent re = new RowingEvent();
 				re.setId(rs.getString("id"));
 				re.setName(rs.getString("name"));
-				// TODO : Fix the dates!
-//				re.setEventDate(LocalDate.ofEpochDay((rs.getTimestamp("event_date").getTime())));
+				re.setEventDate(new Date(rs.getTimestamp("event_date").getTime()));
+				re.setChangeMoment(new Date(rs.getTimestamp("change_moment").getTime()));
 				re.setLocation(rs.getString("location"));
 				events.add(re);
 			}
@@ -97,7 +99,7 @@ public class DBService {
 	public RowingEvent selectEvent(String eventId) throws RowTimerException {
 		return selectEvent(eventId, null);
 	}
-	
+
 	/**
 	 * Select the controlled devices from the mySQL database, instantiate the
 	 * specific object and return the list of them.
@@ -132,11 +134,11 @@ public class DBService {
 			if ( rs.next() ) {
 				re.setId(rs.getString("id"));
 				re.setName(rs.getString("name"));
-				// TODO : Fix the dates!
-//				re.setEventDate(LocalDate.ofEpochDay((rs.getTimestamp("event_date").getTime())));
+				re.setEventDate(new Date(rs.getTimestamp("event_date").getTime()));
+				re.setChangeMoment((new Date(rs.getTimestamp("change_moment").getTime())));
 				re.setLocation(rs.getString("location"));
 				re.setEventRaces(selectRacesOfEvent(eventId));
-				
+
 			} else {
 				logger.warn("Event with ID=" + eventId + " does not exist on the database ");
 				throw new RowTimerException("Event with ID=" + eventId + " does not exist on the database ",404);
@@ -190,11 +192,10 @@ public class DBService {
 			ResultSet rs = s.executeQuery();
 			while (rs.next() ) {
 				Race race = new Race();
-				
+
 				race.setEventId(rs.getString("event_id"));
 				race.setSeqno(rs.getInt("seqno"));
-				// TODO : Fix the time
-				//LocalTime hour;
+				race.setHour(new Date(rs.getTimestamp("hour").getTime()));
 				race.setBoatType(selectBoatType(rs.getString("boat_type")));
 				race.setCategory(selectCategory(rs.getString("category")));
 				race.setCrewAlignment(selectCrewAlignment(race.getEventId(),race.getSeqno()));
@@ -216,12 +217,122 @@ public class DBService {
 		return races;
 	}
 
+	/**
+	 * Update start times registered by start referee
+	 * 
+	 * @param eventId
+	 * @param startTimes
+	 * @throws RowTimerException 
+	 */
+	public void updateStartTimes(String eventId,List<StartRace> startTimes) throws RowTimerException {
+		if ( logger.isDebugEnabled()) {
+			logger.debug("updateStartTimes() called ");
+		}
+
+		Connection c = null;
+		PreparedStatement s = null;
+
+		try {
+			c = dataSource.getConnection();
+
+			String updateTableSQL = "UPDATE race SET start_time = ? WHERE event_id = ? AND seqno = ?";
+			if ( logger.isDebugEnabled()) {
+				logger.debug("Update SQL : " + updateTableSQL);
+			}
+			s = c.prepareStatement(updateTableSQL);
+
+			for (StartRace startRaceTime : startTimes) {
+				s.setTimestamp(1, new Timestamp(startRaceTime.getStartMoment().getTime()));
+				s.setString(2, eventId);
+				s.setInt(3, startRaceTime.getRaceno());
+				s.execute();
+			}
+		} catch (SQLException e) {
+			logger.error("Error updating start times of a race",e);
+			throw new RowTimerException(e);
+		} finally {
+			if (s != null) {
+				try {
+					s.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+
+			if (c != null) {
+				try {
+					c.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+	/**
+	 * Update the results of races that already finished
+	 * 
+	 * @param eventId
+	 * @param results
+	 * @throws RowTimerException 
+	 */
+	public void updateResults(String eventId,List<Result> results) throws RowTimerException {
+		if ( logger.isDebugEnabled()) {
+			logger.debug("updateStartTimes() called ");
+		}
+
+		Connection c = null;
+		PreparedStatement s = null;
+
+		try {
+			c = dataSource.getConnection();
+
+			String updateTableSQL = "UPDATE alignment SET end_time = ? " +
+			  " WHERE event_id = ? AND race_no = ? AND lane = ?";
+			if ( logger.isDebugEnabled()) {
+				logger.debug("Update SQL : " + updateTableSQL);
+			}
+			s = c.prepareStatement(updateTableSQL);
+
+			for (Result result : results) {
+				s.setDate(1, new java.sql.Date(result.getFinishTime().getTime()));
+				s.setString(2, eventId);
+				s.setInt(3, result.getRaceno());
+				s.setInt(4, result.getLane());
+				s.execute();
+			}
+		} catch (SQLException e) {
+			logger.error("Error updating arrival times of a race",e);
+			throw new RowTimerException(e);
+		} finally {
+			if (s != null) {
+				try {
+					s.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+
+			if (c != null) {
+				try {
+					c.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
 
 	private BoatType selectBoatType(String boatTypeId) throws RowTimerException {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("selectBoatType() called with ID " + boatTypeId);
 		}
-		
+
 		if ( boatTypeId == null || "".equals(boatTypeId.trim()) )
 			return null;
 
@@ -233,14 +344,14 @@ public class DBService {
 			c = dataSource.getConnection();
 
 			StringBuffer strSql = new StringBuffer("select * from boat_type ");
-			strSql.append(" where id='" + boatTypeId + "'");
+			strSql.append(" where boat_id='" + boatTypeId + "'");
 			s = c.prepareStatement(strSql.toString());
 
 			ResultSet rs = s.executeQuery();
 			if ( rs.next() ) {
 				boatType.setBoatId(rs.getString("boat_id"));
 				boatType.setName(rs.getString("name"));
-				
+
 			} else {
 				logger.warn("Boat Type with ID=" + boatTypeId + " does not exist on the database ");
 				throw new RowTimerException("Crew with ID=" + boatTypeId + " does not exist on the database ");
@@ -268,7 +379,7 @@ public class DBService {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("selectCategory() called with ID " + categoryId);
 		}
-		
+
 		if ( categoryId == null || "".equals(categoryId.trim()))
 			return null;
 
@@ -288,7 +399,7 @@ public class DBService {
 				category.setId(rs.getString("id"));
 				category.setName(rs.getString("name"));
 				category.setGender(rs.getString("gender"));
-				
+
 			} else {
 				logger.warn("Boat Type with ID=" + categoryId + " does not exist on the database ");
 				throw new RowTimerException("Crew with ID=" + categoryId + " does not exist on the database ");
@@ -311,7 +422,7 @@ public class DBService {
 		return category;
 	}
 
-	
+
 	/**
 	 * Select the crews that are aligned in a rec
 	 * @param eventId
@@ -321,7 +432,7 @@ public class DBService {
 	 */
 	private List<Alignment> selectCrewAlignment(String eventId,Integer raceNo) throws RowTimerException {
 		List<Alignment> alignment = new ArrayList<Alignment>();
-		String filter = "event_id='" + eventId + "'";
+		String filter = "event_id='" + eventId + "' and race_no=" + raceNo;
 		if ( logger.isDebugEnabled()) {
 			logger.debug("selectRacesOfEvent() called with filter: " + filter);
 		}
@@ -347,7 +458,7 @@ public class DBService {
 			ResultSet rs = s.executeQuery();
 			while (rs.next() ) {
 				Alignment alignedCrew = new Alignment ();
-				
+
 				alignedCrew.setEventId(rs.getString("event_id"));
 				alignedCrew.setRaceNo(rs.getInt("race_no"));
 				alignedCrew.setLane(rs.getInt("lane"));
@@ -381,7 +492,7 @@ public class DBService {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("selectCrew() called with ID " + crewId);
 		}
-		
+
 		if ( crewId == null || "".equals(crewId.trim()) )
 			return null;
 
@@ -405,7 +516,7 @@ public class DBService {
 				crew.setCompetitor(selectCompetitor(rs.getString("competitor_id")));
 				crew.setDescription(rs.getString("description"));
 				crew.setCrewMembers(selectCrewMembers(rs.getString("id")));
-				
+
 			} else {
 				logger.warn("Crew with ID=" + crewId + " does not exist on the database ");
 				throw new RowTimerException("Crew with ID=" + crewId + " does not exist on the database ");
@@ -427,8 +538,8 @@ public class DBService {
 		}
 		return crew;
 	}
-	
-	
+
+
 	private List<CrewMember> selectCrewMembers(String crewId) throws RowTimerException {
 		List<CrewMember> alignment = new ArrayList<CrewMember>();
 		if ( logger.isDebugEnabled()) {
@@ -451,7 +562,7 @@ public class DBService {
 			ResultSet rs = s.executeQuery();
 			while (rs.next() ) {
 				CrewMember crewMember = new CrewMember();
-				
+
 				crewMember.setCrewId(rs.getString("crew_id"));
 				crewMember.setPosition(rs.getInt("position"));
 				crewMember.setPerson(selectPerson(rs.getString("person_id")));
@@ -472,12 +583,12 @@ public class DBService {
 		}
 		return alignment;
 	}
-	
+
 	private Competitor selectCompetitor(String competitorId) throws RowTimerException {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("selectPerson() called with ID " + competitorId);
 		}
-		
+
 		if ( competitorId == null || "".equals(competitorId.trim()) )
 			return null;
 
@@ -497,7 +608,7 @@ public class DBService {
 				competitor.setId(rs.getString("id"));
 				competitor.setName(rs.getString("name"));
 				competitor.setAcronym(rs.getString("acronym"));
-				
+
 			} else {
 				logger.warn("Competitor with ID=" + competitorId + " does not exist on the database ");
 				throw new RowTimerException("Crew with ID=" + competitorId + " does not exist on the database ");
@@ -519,13 +630,13 @@ public class DBService {
 		}
 		return competitor;
 	}
-	
-	
+
+
 	private Person selectPerson(String personId) throws RowTimerException {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("selectPerson() called with ID " + personId);
 		}
-		
+
 		if ( personId == null || "".equals(personId.trim()) )
 			return null;
 
@@ -544,7 +655,7 @@ public class DBService {
 			if ( rs.next() ) {
 				person.setId(rs.getString("id"));
 				person.setName(rs.getString("name"));
-				
+
 			} else {
 				logger.warn("Person with ID=" + personId + " does not exist on the database ");
 				throw new RowTimerException("Crew with ID=" + personId + " does not exist on the database ");

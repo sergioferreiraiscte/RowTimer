@@ -3,12 +3,14 @@ package pt.iscte.row_timer.android.database;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Database lifecycle management and access
  */
 public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 5;
+    private static final String TAG = "RowingEventsDBHelper";
+    private static final int DATABASE_VERSION = 6;
 
     public RowingEventsDatabaseHelper(Context c) {
         super(c, "ROWING_EVENTS_DATABASE", null, DATABASE_VERSION);
@@ -17,6 +19,7 @@ public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.d(TAG,"onCreate()");
         db.execSQL("CREATE TABLE rowing_event (" +
                 "  id VARCHAR(128) PRIMARY KEY," +
                 "  name VARCHAR(128)," +
@@ -39,6 +42,7 @@ public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
                 "  hour TIMESTAMP, " +
                 "  boat_type CHAR(10), " +
                 "  category VARCHAR(20), " +
+                "  start_time TIMESTAMP, " +
                 "  PRIMARY KEY (event_id,seqno) " +
                 "); ");
         db.execSQL( "CREATE TABLE competitor ( " +
@@ -65,12 +69,14 @@ public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
                 "  event_id VARCHAR(128), " +
                 "  race_no INTEGER, " +
                 "  lane INTEGER, " +
-                "  crew VARCHAR(20) " +
+                "  crew VARCHAR(20), " +
+                "  end_time TIMESTAMP " +
                 "); ");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        Log.d(TAG,"onUpgrade()");
         db.execSQL("DROP TABLE IF EXISTS rowing_event");
         db.execSQL("DROP TABLE IF EXISTS category");
         db.execSQL("DROP TABLE IF EXISTS race");

@@ -6,15 +6,22 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 import java.util.List;
 
 import pt.iscte.row_timer.android.RowTimerException;
 import pt.iscte.row_timer.android.database.RowingEventsDataSource;
+import pt.iscte.row_timer.android.model.Result;
 import pt.iscte.row_timer.android.model.RowingEvent;
+import pt.iscte.row_timer.android.model.StartRace;
 
 /**
  * Eexecute remote services
@@ -22,13 +29,18 @@ import pt.iscte.row_timer.android.model.RowingEvent;
 public class ExecuteRemoteServices {
     private static final String TAG = "ExecuteRemoteServices";
     // TODO : The IP should be stored somewhere else
-    private static final String SERVICE_URL = "http://192.168.1.91:8080/RowTimerBackOffice/api";
+    // Work IP
+    //private static final String IP = "192.168.1.37";
+    // Home IP
+    private static final String IP = "192.168.1.91";
+    private static final String SERVICE_URL = "http://" + IP + ":8080/RowTimerBackOffice/api";
 
     /**
      * Execute any remote REST service.
      * TODO : Generalize to be able to use POST
+     *
      * @param apiURLRightSide
-     * @param classType
+     * @param apiURLRightSide
      * @return
      * @throws RowTimerException
      */
@@ -50,6 +62,9 @@ public class ExecuteRemoteServices {
                 data = in.read();
                 receivedStr.append(current);
             }
+        } catch (FileNotFoundException fne) {
+            // 404 - No event after pulled time
+            return null;
         } catch (Exception e) {
             Log.d(TAG, "Exception ocurred : " + e.getMessage());
             throw new RowTimerException(e);
@@ -62,19 +77,53 @@ public class ExecuteRemoteServices {
         return receivedStr.toString();
     }
 
+    /**
+     * Execute a POST REST service that receives the JSON information in the body
+     *
+     * @return
+     */
+    private void executePOST(String apiURL, String jsonStr) {
+        HttpURLConnection urlConnection = null;
+        try {
+            StringBuffer strURL = new StringBuffer();
+            strURL.append(SERVICE_URL).append(apiURL);
+            URL url = new URL(strURL.toString());
+            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.setDoOutput(true);
+            urlConnection.setChunkedStreamingMode(0);
+            urlConnection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            urlConnection.setRequestMethod("POST");
+
+            OutputStreamWriter writer = new OutputStreamWriter(urlConnection.getOutputStream());
+            writer.write(jsonStr);
+            writer.flush();
+            writer.close();
+
+        } catch (Exception e) {
+
+        } finally {
+            urlConnection.disconnect();
+        }
+    }
+
 
     /**
-     * Get the information of an event
+     * Get the information of an event.
+     * It only get it if the information on server was changed
+     *
      * @param eventId
      * @return
      */
-    public RowingEvent getEventData(String eventId) throws RowTimerException {
+    public RowingEvent getEventData(String eventId, Date lastPulldate) throws RowTimerException {
         Log.d(TAG, "getEventData()");
         StringBuffer strURL = new StringBuffer();
         strURL.append("/event/").append(eventId);
-        String jsonString =  executeRESTService(strURL.toString());
+        strURL.append("?pulled=").append(lastPulldate.getTime());
+        String jsonString = executeRESTService(strURL.toString());
+        if (jsonString == null )
+            return null;
         ObjectMapper objectMapper = new ObjectMapper();
-        RowingEvent  rowingEvent = null;
+        RowingEvent rowingEvent = null;
         try {
             rowingEvent = objectMapper.readValue(jsonString.getBytes(), RowingEvent.class);
         } catch (IOException e) {
@@ -86,6 +135,7 @@ public class ExecuteRemoteServices {
     /**
      * Get the list of events
      * TODO : Should get event list only after last pull
+     *
      * @return
      * @throws RowTimerException
      */
@@ -93,15 +143,57 @@ public class ExecuteRemoteServices {
         Log.d(TAG, "getEventList()");
         StringBuffer strURL = new StringBuffer();
         strURL.append("/event");
-        String jsonString =  executeRESTService(strURL.toString());
+        String jsonString = executeRESTService(strURL.toString());
         List<RowingEvent> rowingEvents = null;
         ObjectMapper objectMapper = new ObjectMapper();
         CollectionType collectionType = objectMapper.getTypeFactory().constructCollectionType(List.class, RowingEvent.class);
         try {
-            rowingEvents  = objectMapper.readValue(jsonString.getBytes(), collectionType);
+            rowingEvents = objectMapper.readValue(jsonString.getBytes(), collectionType);
         } catch (IOException e) {
             throw new RowTimerException(e);
         }
         return rowingEvents;
+    }
+
+    /**
+     * Send start times acumulated by start referee
+     */
+    public void sendStartTimes(String eventId, List<StartRace> startTimes) throws RowTimerException {
+        Log.d(TAG, "sendStartTimes()");
+
+        // Build JSON
+        String jsonStr = null;
+        ObjectMapper mapper = new ObjectMapper();
+        CollectionType collectionType = mapper.getTypeFactory().constructCollectionType(List.class, StartRace.class);
+        try {
+            jsonStr = mapper.writeValueAsString(startTimes);
+        } catch (IOException e) {
+            throw new RowTimerException(e);
+        }
+
+        StringBuffer strURL = new StringBuffer();
+        strURL.append("/event/").append(eventId).append("/start/times");
+        executePOST(strURL.toString(),jsonStr);
+    }
+
+    /**
+     * Send results acumulated by arrival referee
+     */
+    public void sendResults(String eventId, List<Result> results) throws RowTimerException {
+        Log.d(TAG, "sendStartTimes()");
+
+        // Build JSON
+        String jsonStr = null;
+        ObjectMapper mapper = new ObjectMapper();
+        CollectionType collectionType = mapper.getTypeFactory().constructCollectionType(List.class, Result.class);
+        try {
+            jsonStr = mapper.writeValueAsString(results);
+        } catch (IOException e) {
+            throw new RowTimerException(e);
+        }
+
+        StringBuffer strURL = new StringBuffer();
+        strURL.append("/event/").append(eventId).append("/arrival/times");
+        executePOST(strURL.toString(),jsonStr);
     }
 }

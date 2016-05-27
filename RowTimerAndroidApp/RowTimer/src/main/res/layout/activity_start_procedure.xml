@@ -9,4 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pt.iscte.row_timer.android.activities.StartProcedureActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/start_alignment"
+            android:layout_width="fill_parent"
+            android:layout_height="383dp"
+            android:choiceMode="none" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="73dp"
+            android:text="Start"
+            android:id="@+id/btnStartRace"
+            android:onClick="markStartOfRace" />
+    </LinearLayout>
+
+
 </RelativeLayout>
+
+
+
