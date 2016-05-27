@@ -1,5 +1,9 @@
 package pt.iscte.row_timer.services;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -18,6 +22,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 import javax.ws.rs.core.Response.Status;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -86,16 +91,19 @@ public class RowTimerService {
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public Response event(@PathParam("id") String eventId, @QueryParam("pulled") Long lastPullDate) {
 		if ( logger.isDebugEnabled()) {
-			logger.debug("/api/event/id - Get event by ID " + eventId + " and filter (pulled date:" + new Date(lastPullDate) + ") called " );
+			if ( lastPullDate != null )
+				logger.debug("/api/event/id - Get event by ID " + eventId + " and filter (pulled date:" + new Date(lastPullDate) + ") called " );
+			else
+				logger.debug("/api/event/id - Get event by ID " + eventId + " called " );
 		}
 
 		RowingEvent rowingEvent = null;
 		try {
 			String filter = null;
 			if ( lastPullDate != null ) { 
-			   SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss.S");
-			   String strDate = sdf.format(new Date(lastPullDate)); 
-			   filter = " change_moment > '" + strDate + "'";
+				SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss.S");
+				String strDate = sdf.format(new Date(lastPullDate)); 
+				filter = " change_moment > '" + strDate + "'";
 			}
 			rowingEvent = dbService.selectEvent(eventId,filter);
 		} catch (RowTimerException rte) {
@@ -136,7 +144,7 @@ public class RowTimerService {
 		ResponseBuilder response = Response.ok((Object) rowingEvent );
 		return response.build();
 	}
-	
+
 	/**
 	 * Store the results related to an event. This will be executed with the information of 
 	 * the finish referee.
@@ -163,7 +171,7 @@ public class RowTimerService {
 		ResponseBuilder response = Response.ok((Object) rowingEvent );
 		return response.build();
 	}
-	
+
 	/**
 	 * Store the movie related to an race
 	 * TODO : Implement it - Should create a library to store the movies in folders (could be in alfresco)
@@ -171,22 +179,27 @@ public class RowTimerService {
 	 */
 	@POST
 	@Path("/event/{id}/{race}/arrival/movie")
-	@Consumes(MediaType.APPLICATION_JSON)
-	public Response storeArrivalMovie(@PathParam("id") String eventId) {
+	@Consumes(MediaType.APPLICATION_OCTET_STREAM)
+	public Response storeArrivalMovie(@PathParam("id") String eventId, InputStream is ) {
 		if ( logger.isDebugEnabled()) {
 			logger.debug("/api/event/{id}/arrival/movie - Store the arrival movie related to a race");
 		}
 
-		RowingEvent rowingEvent = null;
+		FileOutputStream out = null;
 		try {
-			rowingEvent = dbService.selectEvent(eventId);
-		} catch (Exception e) {
-			logger.error("Error getting event : ",e);
-			ResponseBuilder response = Response.serverError();
-			return response.build();
+			out = new FileOutputStream("/tmp/xpto");
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			IOUtils.copy(is, out);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
-		ResponseBuilder response = Response.ok((Object) rowingEvent );
+		ResponseBuilder response = Response.ok((Object) "OK" );
 		return response.build();
 	}
 

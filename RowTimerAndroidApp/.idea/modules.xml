@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RowTimer/RowTimer.iml" filepath="$PROJECT_DIR$/RowTimer/RowTimer.iml" />
       <module fileurl="file://$PROJECT_DIR$/RowTimerAndroidApp.iml" filepath="$PROJECT_DIR$/RowTimerAndroidApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RowTimer/app.iml" filepath="$PROJECT_DIR$/RowTimer/app.iml" />
     </modules>
   </component>
 </project>

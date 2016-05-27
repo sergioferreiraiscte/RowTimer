@@ -130,12 +130,19 @@
 			<version>3.2.8.RELEASE</version>
 		</dependency>
 
-		<!-- Apache Fast httpClient to connect to arduino -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>4.5.1</version>
 		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+
 
 		<!-- MySQL database -->
 		<dependency>
