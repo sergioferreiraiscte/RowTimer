@@ -64,4 +64,5 @@ public class RowingEvent {
     public void setChangeMoment(Date changeMoment) {
         this.changeMoment = changeMoment;
     }
-}
+};
+

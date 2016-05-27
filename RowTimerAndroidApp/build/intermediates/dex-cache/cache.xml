@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4575c1f86336989e135be7766a3736d36bd574fd">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4e1c344b7c9b60cbb5bd43a28794745c36c526a4\classes.dex" />
+    </item>
+
+</items>

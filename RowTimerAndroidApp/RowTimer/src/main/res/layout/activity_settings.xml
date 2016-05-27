@@ -4,12 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context="pt.iscte.row_timer.android.activities.EventsListActivity">
-
-    <ListView
-        android:id="@+id/listview"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        />
+    tools:context="pt.iscte.row_timer.android.activities.SettingsActivity">
 
 </RelativeLayout>

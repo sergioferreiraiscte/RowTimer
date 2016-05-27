@@ -14,8 +14,8 @@
     -->
     <!-- Rowtimer Teste -->
     <string name="facebook_app_id">1340808619269535</string>
-    <string name="tvUser">Username</string>
-    <string name="tvPassword">Password</string>
+    <string name="tvUser">USERNAME</string>
+    <string name="tvPassword">PASSWORD</string>
     <string name="tvLogin">Login</string>
     <string name="btLogin">Login</string>
 
