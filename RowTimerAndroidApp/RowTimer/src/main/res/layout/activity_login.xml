@@ -7,57 +7,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
 
-    <TextView
+    android:padding="0dp"
+    android:background="@color/bluePrimary" >
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/tvLogin"
-        android:id="@+id/textView"
-        android:layout_marginTop="55dp"
+        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etPassword"
-        android:text="Password"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="User Name"
-        android:ems="10"
-        android:id="@+id/etUserName"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/etPassword"
-        android:layout_marginTop="52dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btLogin"
-        android:id="@+id/btLogin"
-        android:layout_below="@+id/etPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="75dp"
+        android:src="@drawable/logo"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/icon_2"
+
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/tvUser"
         android:id="@+id/tvUser"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/etUserName"
-        android:layout_marginTop="23dp" />
+        android:text="@string/tvUser"
+
+        android:layout_above="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter y"
+        android:ems="10"
+        android:id="@+id/etUserName"
+        android:layout_above="@+id/tvPassword"
+        android:layout_alignStart="@+id/tvPassword"
+
+        android:minWidth="250dp"
+        android:layout_marginBottom="25dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,12 +65,46 @@
         android:layout_above="@+id/etPassword"
         android:layout_alignStart="@+id/etPassword" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Enter your password"
+
+        android:minWidth="250dp"
+        android:layout_above="@+id/btLogin"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btLogin"
+        android:id="@+id/btLogin"
+        android:layout_above="@+id/login_button"
+        android:layout_marginBottom="25dp"
+
+        android:onClick="checkLoginCredentials"
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+     />
+
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

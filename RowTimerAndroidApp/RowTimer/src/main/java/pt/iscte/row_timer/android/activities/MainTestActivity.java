@@ -23,6 +23,12 @@ public class MainTestActivity extends AppCompatActivity {
 
     Intent intent;
 
+    /** Called when the user clicks the Settings button */
+    public void startSettingsActivity(View view) {
+        intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
     /** Called when the user clicks the Event List button */
     public void startEventsListActivity(View view) {
         intent = new Intent(this, EventsListActivity.class);

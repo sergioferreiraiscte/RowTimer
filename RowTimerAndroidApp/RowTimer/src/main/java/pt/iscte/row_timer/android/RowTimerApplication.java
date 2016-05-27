@@ -54,7 +54,7 @@ public class RowTimerApplication extends Application {
      */
     private void getLocalEventList() {
         RowingEventsDataSource database = new RowingEventsDataSource(this);
-        eventList = database.readRowingEventList();
+        //eventList = database.readRowingEventList();
     }
 
 

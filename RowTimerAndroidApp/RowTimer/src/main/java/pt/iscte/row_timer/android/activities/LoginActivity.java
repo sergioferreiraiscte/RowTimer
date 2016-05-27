@@ -1,7 +1,9 @@
 package pt.iscte.row_timer.android.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.facebook.FacebookSdk;
 
@@ -32,5 +34,19 @@ public class LoginActivity extends AppCompatActivity {
 
         // Logs 'app deactivate' App Event.
         //AppEventsLogger.deactivateApp(this);
+    }
+
+    Intent intent;
+
+    /** Called when the user clicks the Event List button */
+    public void checkLoginCredentials(View view) {
+
+        // LOGIN CHECKING ....
+        boolean validated = true;
+
+        if(validated){
+            intent = new Intent(this, EventsListActivity.class);
+            startActivity(intent);
+        }
     }
 }
