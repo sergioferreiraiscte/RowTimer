@@ -9,40 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="249d25ba-986c-4bea-b471-0feaf3bca36b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/StartRace.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceStartJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateResultsJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateStartTimesJob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/build.gradle" afterPath="$PROJECT_DIR$/RowTimer/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/beans/DBService.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/beans/DBService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Alignment.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/events/Alignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/services/RowTimerService.java" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/java/pt/iscte/row_timer/services/RowTimerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/resources/row_timer.sql" afterPath="$PROJECT_DIR$/../RowTimerBackOffice/src/main/resources/row_timer.sql" />
-    </list>
+    <list default="true" id="249d25ba-986c-4bea-b471-0feaf3bca36b" name="Default" comment="" />
     <ignored path="RowTimerAndroidApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -2429,7 +2396,13 @@
       <option name="project" value="LOCAL" />
       <updated>1463951818028</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New big version. A lot of things done">
+      <created>1464361992876</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464361992876</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2806,6 +2779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
