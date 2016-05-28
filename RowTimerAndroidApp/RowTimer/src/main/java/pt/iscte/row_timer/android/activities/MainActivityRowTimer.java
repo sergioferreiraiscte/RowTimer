@@ -10,13 +10,13 @@ import pt.iscte.row_timer.android.RowTimerApplication;
 /**
  * To test activities independently of others
  */
-public class MainTestActivity extends AppCompatActivity {
+public class MainActivityRowTimer extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_test);
+        setContentView(R.layout.activity_main_row_timer);
         setTitle(R.string.title_activity_main_test);
         RowTimerApplication app = (RowTimerApplication)getApplication();
     }

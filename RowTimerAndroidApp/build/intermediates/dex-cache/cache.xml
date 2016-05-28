@@ -79,18 +79,18 @@
         <dex dex="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.12.1_0667206c0b8d52a2b96b622cfec307cb9f1e6739/classes.dex" />
     </item>
     <item
+        jar="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="422c64135e61e0c107ede60a5519734d8e3d99c1">
+        <dex dex="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7d9c2617e2ea6ad96308e3217b9fe20f6e7c6e04/classes.dex" />
+    </item>
+    <item
         jar="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
         <dex dex="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_a11c8705e257425ff5e4c5f750b22ac9bb34ac8d/classes.dex" />
-    </item>
-    <item
-        jar="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="1c1ab508062f74ca30c97569897dd91c62e20c50">
-        <dex dex="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7d9c2617e2ea6ad96308e3217b9fe20f6e7c6e04/classes.dex" />
     </item>
     <item
         jar="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
@@ -110,7 +110,7 @@
         jar="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="44f490779d9e2dfb16e337a7a7e0596ce283dd04">
+        sha1="adaa28d9b9f5575f9b59e2d40d5ef38c936b8ca7">
         <dex dex="/home/sergio/SergioContent/MOSS/DAMOVEIS/TrabalhoFinal/PROJECT/RowTimer/RowTimerAndroidApp/RowTimer/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7b0b3787c65ec15013ea12db2b6156b3a55e151c/classes.dex" />
     </item>
     <item
