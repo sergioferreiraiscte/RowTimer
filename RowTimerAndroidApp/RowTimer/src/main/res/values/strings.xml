@@ -26,4 +26,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_get_remote_data">GetRemoteDataActivity</string>
     <string name="title_activity_synchronize">SynchronizeActivity</string>
+    <string name="title_activity_activity_video">ActivityVideo</string>
+    <string name="record">Record</string>
+    <string name="description_info">Info</string>
+    <string name="permission_request">Permission</string>
+    <string name="camera_error">Camera Error</string>
+    <string name="stop">Stop</string>
 </resources>

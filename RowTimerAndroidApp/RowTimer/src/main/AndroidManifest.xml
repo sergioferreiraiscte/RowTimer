@@ -5,8 +5,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-feature android:name="android.hardware.camera" android:required="true" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name="pt.iscte.row_timer.android.RowTimerApplication"
@@ -71,10 +77,21 @@
         <activity
             android:name=".FinishProcedureActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".SettingsActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/title_activity_activity_video"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
     </application>
 
 </manifest>

@@ -29,6 +29,30 @@ public class FinishProcedureActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_finish_procedure);
+        arrivals = new ArrayList<Date>();
+
+        application = (RowTimerApplication) getApplication();
+        race = application.getCurrentRace();
+        List<Alignment> crewAlignment = race.getCrewAlignment();
+
+        // Get ListView from activity_events_list.xml
+        final ListView listView = (ListView) findViewById(R.id.finish_alignment);
+
+        setContentView(R.layout.activity_camera);
+        if (null == savedInstanceState) {
+            Camera2VideoFragment cameraFragment = Camera2VideoFragment.newInstance();
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.container, cameraFragment)
+                    .commit();
+        }
+    }
+
+    /*
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finish_procedure);
         arrivals = new ArrayList<Date>();
 
@@ -47,10 +71,11 @@ public class FinishProcedureActivity extends AppCompatActivity {
         }
 
     }
+    */
 
 
     public void markCrewArrival(View view) {
-        Log.d(TAG,"marCreArrival()");
+        Log.d(TAG,"markCrewArrival()");
 
         race.setStartTime(new Date());
         arrivals.add(new Date());
