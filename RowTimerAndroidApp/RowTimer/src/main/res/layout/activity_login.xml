@@ -22,17 +22,6 @@
         android:src="@drawable/logo"
         />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:src="@drawable/icon_2"
-
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Enter y"
+        android:hint="Enter your name"
         android:ems="10"
         android:id="@+id/etUserName"
         android:layout_above="@+id/tvPassword"
@@ -75,7 +64,7 @@
 
         android:minWidth="250dp"
         android:layout_above="@+id/btLogin"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -100,7 +89,7 @@
         android:layout_height="wrap_content"
 
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         android:minWidth="250dp"
         android:background="@color/blueDark"
         android:textColor="#FFF"

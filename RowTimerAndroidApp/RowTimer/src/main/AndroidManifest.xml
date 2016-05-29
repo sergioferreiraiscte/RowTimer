@@ -20,7 +20,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.Light">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -30,50 +30,60 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".EventsListActivity"
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".EventDetailActivity"
             android:label="@string/title_activity_event_detail"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".RaceModeActivity"
             android:label="RaceModeActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".EventsListActivity"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name=".GetRemoteDataActivity"
             android:label="@string/title_activity_get_remote_data"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".RefereeMenuActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".SynchronizeActivity"
             android:label="@string/title_activity_synchronize"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".RaceListActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".StartProcedureActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".FinishProcedureActivity"
             android:screenOrientation="portrait" />
