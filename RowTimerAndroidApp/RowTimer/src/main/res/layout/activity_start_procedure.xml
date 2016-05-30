@@ -29,14 +29,21 @@
         android:layout_above="@+id/btnStartRace"/>
 
     <Button
-        android:layout_width="fill_parent"
-        android:layout_height="73dp"
-        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
         android:id="@+id/btnStartRace"
-        android:onClick="markStartOfRace"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"/>
 
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="markStartOfRace"
+        android:layout_gravity="center_horizontal" />
 
 </RelativeLayout>
 

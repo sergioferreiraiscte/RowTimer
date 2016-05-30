@@ -18,20 +18,40 @@
             android:layout_width="fill_parent"
             android:layout_height="346dp"
             android:choiceMode="none" />
+        </LinearLayout>
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mark Arrival"
+            android:text="MARK ARRIVAL"
             android:id="@+id/btnFinishRace"
-            android:onClick="markCrewArrival" />
+
+            android:layout_above="@+id/btnDone"
+            android:layout_marginBottom="15dp"
+
+            android:minWidth="250dp"
+            android:background="@color/blueDark"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="markCrewArrival"
+            android:layout_gravity="center_horizontal" />
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Done"
+            android:text="DONE"
             android:id="@+id/btnDone"
-            android:onClick="done" />
-    </LinearLayout>
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+
+            android:minWidth="250dp"
+            android:background="@color/blueDark"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="done"
+            android:layout_gravity="center_horizontal" />
 
 </RelativeLayout>
