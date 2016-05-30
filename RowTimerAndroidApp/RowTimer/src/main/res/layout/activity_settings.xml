@@ -3,7 +3,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="pt.iscte.row_timer.android.activities.SettingsActivity"
+
     android:padding="0dp"
-    tools:context="pt.iscte.row_timer.android.activities.SettingsActivity">
+    android:background="@color/bluePrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLoggedAs"
+        android:layout_alignParentTop="true"
+        android:text="You are currently logged in as:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvLoggedAs"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/placeholder200"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:text="USERNAME"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView"
+        android:textColor="#FFF"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:id="@+id/btnLogout"
+
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginTop="25dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOWNLOAD EVENTS"
+        android:id="@+id/btnDownloadEvents"
+
+        android:layout_above="@+id/btnUpload"
+        android:layout_marginBottom="15dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD START TIMES"
+        android:id="@+id/btnUpload"
+
+        android:layout_above="@+id/btnUploadResults"
+        android:layout_marginBottom="15dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD RESULTS"
+        android:id="@+id/btnUploadResults"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>

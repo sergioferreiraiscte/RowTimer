@@ -28,7 +28,6 @@ public class RaceListActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_race_list);
-        setTitle("Races");
 
         application = (RowTimerApplication) getApplication();
         List<Race> raceList = application.getCurrentEvent().getEventRaces();

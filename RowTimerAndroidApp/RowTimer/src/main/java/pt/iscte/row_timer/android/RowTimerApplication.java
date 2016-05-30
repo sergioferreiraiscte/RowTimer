@@ -57,7 +57,6 @@ public class RowTimerApplication extends Application {
         //eventList = database.readRowingEventList();
     }
 
-
     public RowingEvent getCurrentEvent() {
         return currentEvent;
     }

@@ -40,8 +40,8 @@ public class RefereeMenuActivity extends AppCompatActivity {
     }
 
     /**
-     * Clicked to choose to go to start race procedure menu.
-     * When choosed, starts an Intent to execute/show StartProcedureActivity
+     * Clicked to choose to go to finish race procedure menu.
+     * When choosed, starts an Intent to execute/show FinishProcedureActivity
      */
     public void chooseFinishProcedure(View view) {
         Log.d(TAG,"Finish Procedure choosed");
@@ -50,10 +50,6 @@ public class RefereeMenuActivity extends AppCompatActivity {
         startActivity(gotoFinishProcedure);
     }
 
-    /**
-     * Clicked to choose to go to start race procedure menu.
-     * When choosed, starts an Intent to execute/show StartProcedureActivity
-     */
     public void chooseUploadStartRaces(View view) {
         Log.d(TAG,"Upload choosed");
         final ProgressDialog ringProgressDialog = ProgressDialog.show(RefereeMenuActivity.this,
@@ -71,10 +67,6 @@ public class RefereeMenuActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), toastStr, Toast.LENGTH_SHORT).show();
     }
 
-    /**
-     * Clicked to choose to go to start race procedure menu.
-     * When choosed, starts an Intent to execute/show StartProcedureActivity
-     */
     public void chooseUploadResults(View view) {
         Log.d(TAG,"Upload results");
         final ProgressDialog ringProgressDialog = ProgressDialog.show(RefereeMenuActivity.this,

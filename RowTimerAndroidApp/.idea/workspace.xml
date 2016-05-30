@@ -15,6 +15,11 @@
           <theme>@style/Theme.AppCompat.NoActionBar</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml">
+        <config>
+          <theme>@style/Theme.AppCompat.DayNight.DarkActionBar</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AndroidLogFilters">
@@ -23,29 +28,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249d25ba-986c-4bea-b471-0feaf3bca36b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/drawable/logo.png" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/drawable/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/customtabs_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/customtabs_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v13_23_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v13_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/menu/menu_event_detail.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/menu/menu_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" afterPath="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_camera.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_camera.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_event_detail.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_event_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_get_remote_data.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_get_remote_data.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_row_timer.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_row_timer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_mode.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_mode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_settings.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_synchronize.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_synchronize.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_video.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_video.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_event_detail.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_event_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_get_remote_data.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_get_remote_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_synchronize.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_synchronize.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/layout/race_list_row.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/layout/race_list_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RowTimer/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/RowTimer/src/main/res/values/strings.xml" />
     </list>
     <ignored path="RowTimerAndroidApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,34 +156,7 @@
     <favorites_list name="RowTimerAndroidApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46831957">
-              <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main_row_timer.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_row_timer.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.181818">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1952,65 +1934,84 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Person.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Competitor.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Crew.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_test.xml" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/RowingEvent.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataJob.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/Connection.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ConnectionUtil.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Result.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/StartRace.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDatabaseHelper.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceStartJob.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureActivity.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateStartTimesJob.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateResultsJob.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/ExecuteRemoteServices.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/video/AutoFitTextureView.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_activity_video.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/video/VideoFragment.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_camera.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/Video/Camera2VideoFragment.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/VideoActivity.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_video.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout-land/fragment_camera2_video.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/video/Camera2VideoFragment.java" />
         <option value="$PROJECT_DIR$/RowTimer/build.gradle" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/fragment_camera2_video.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/Camera2VideoFragment.java" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml" />
-        <option value="$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_row_timer.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_settings.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/menu/menu_event_detail.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/menu/menuSettings.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/menu/menu_settings.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_camera.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_event_detail.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_get_remote_data.xml" />
         <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_mode.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_synchronize.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_video.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_event_detail.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_get_remote_data.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/content_synchronize.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml" />
+        <option value="$PROJECT_DIR$/RowTimer/src/main/res/layout/race_list_row.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-45" />
-    <option name="y" value="23" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AndroidLintAppCompatResource</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -2038,9 +2039,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2051,6 +2051,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gradle Scripts" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimerAndroidApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RowTimer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2094,46 +2112,6 @@
               <option name="myItemId" value="RowTimer" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RowTimerAndroidApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RowTimer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RowTimerAndroidApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RowTimer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2151,6 +2129,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2655,8 +2634,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-45" y="23" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.49222797" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405347" sideWeight="0.4495848" order="13" side_tool="false" content_ui="tabs" />
@@ -2664,7 +2643,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39606395" sideWeight="0.16073547" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5033408" sideWeight="0.8552788" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22828507" sideWeight="0.8552788" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283679" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718328" sideWeight="0.47212335" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3407134" sideWeight="0.47093713" order="2" side_tool="false" content_ui="tabs" />
@@ -2673,7 +2652,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24040511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24040511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24970344" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -2746,12 +2725,6 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/DataSynchronizationJob.java</url>
           <line>65</line>
           <properties />
@@ -2763,108 +2736,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/StartProcedureArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7244898">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Race.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceStartJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.010204081">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/OnTaskCompleted.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18367347">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6122449">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateStartTimesJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7346939">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventListArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63265306">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/UpdateResultsJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86206895">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/model/Alignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5510204">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/synchronization/RaceFinishJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/database/RowingEventsDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2872,13 +2743,6 @@
           <folding>
             <element signature="e#14546#14554#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -2903,17 +2767,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/content_event_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -2958,41 +2811,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/content_get_remote_data.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32608697">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/GetRemoteDataActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10404624">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_camera.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4849138">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/video/AutoFitTextureView.java">
@@ -3009,51 +2832,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/MainActivityRowTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_event_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3636365">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1955836">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/Camera2VideoFragment.java">
@@ -3067,22 +2850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.129771">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/FinishProcedureActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029360967">
           <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3090,43 +2861,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6183074">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/fragment_camera2_video.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35114503">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_video.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38931298">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38358778">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListArrayAdapter.java">
@@ -3147,61 +2882,329 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43367347">
-          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.40669855">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
-            <element signature="e#999#1017#0" expanded="true" />
-            <element signature="e#1210#1235#0" expanded="true" />
-            <element signature="e#2039#2057#0" expanded="true" />
-            <element signature="e#2344#2381#0" expanded="true" />
-            <element signature="e#2689#2729#0" expanded="true" />
-            <element signature="e#3050#3086#0" expanded="true" />
-            <element signature="e#3701#3740#0" expanded="true" />
+            <element signature="e#677#706#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/race_list_row.xml">
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.2">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24182077">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RefereeMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="53" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48364154">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="669" column="13" selection-start-line="669" selection-start-column="13" selection-end-line="669" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/RowTimerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4295302">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/MainActivityRowTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/menu/menu_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.648855">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#404#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4150944">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/EventsListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.97339594">
+          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+          <folding>
+            <element signature="e#2119#2137#0" expanded="true" />
+            <element signature="e#2464#2501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/RaceListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46015036">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_camera.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/java/pt/iscte/row_timer/android/activities/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.6409836">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_event_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27868852">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_events_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11147541">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_finish_procedure.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22295082">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11147541">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_get_remote_data.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22295082">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_main_row_timer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.181818">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3688524">
+          <caret line="85" column="47" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="47" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_login.xml">
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46831957">
-          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+        <state vertical-scroll-proportion="-2.4727273">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_race_mode.xml">
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2363636">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_referee_menu.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11147541">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_settings.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8081967">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_start_procedure.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11147541">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_synchronize.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.090909">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/activity_video.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.109091">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/content_event_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22295082">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/content_get_remote_data.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3065574">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#326#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/content_synchronize.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3065574">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/event_list_row.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11147541">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/fragment_camera2_video.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89180326">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RowTimer/src/main/res/layout/race_list_row.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19508196">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
