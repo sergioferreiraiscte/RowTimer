@@ -79,20 +79,6 @@ public class EventsListActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * TODO : This should not be used. Use the list of events, instead
-     *
-     * @return
-     */
-    private ArrayList<Event> generateData() {
-
-        ArrayList<Event> events = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) {
-            events.add(new Event(i, "Event " + i, "Event " + i + " description"));
-        }
-
-        return events;
-    }
 
     /**
      * Clicked to choose the event from the list.

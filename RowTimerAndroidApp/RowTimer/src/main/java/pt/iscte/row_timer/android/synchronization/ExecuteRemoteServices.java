@@ -168,7 +168,8 @@ public class ExecuteRemoteServices {
         Log.d(TAG, "getEventData()");
         StringBuffer strURL = new StringBuffer();
         strURL.append("/event/").append(eventId);
-        strURL.append("?pulled=").append(lastPulldate.getTime());
+        // TODO : Forcing to allways get information
+        //strURL.append("?pulled=").append(lastPulldate.getTime());
         String jsonString = executeRESTService(strURL.toString());
         if (jsonString == null )
             return null;
