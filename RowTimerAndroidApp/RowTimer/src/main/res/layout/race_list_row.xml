@@ -4,14 +4,20 @@
     android:layout_height="wrap_content"
     android:background="@color/lightGrey">
 
-    <ImageView
+    <TextView
+        android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:textSize="50sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/blueDark"
+        android:singleLine="true"
+        android:text="01:35"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/placeholder100"
         />
 
     <TextView
@@ -19,10 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toRightOf="@+id/number"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="5dp"
         android:textColor="@color/blueDark"
         android:singleLine="true"
         android:ellipsize="end"
@@ -36,10 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/label"
         android:textSize="12sp"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toRightOf="@+id/number"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:layout_marginTop="5dp"
         android:textColor="@color/bluePrimary"
 
         android:text="EVENT VALUE PLACEHOLDER"

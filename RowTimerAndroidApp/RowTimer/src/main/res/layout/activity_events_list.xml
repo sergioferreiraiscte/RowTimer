@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="pt.iscte.row_timer.android.activities.EventsListActivity"
+
     android:padding="0dp"
-    tools:context="pt.iscte.row_timer.android.activities.EventsListActivity">
+    android:background="@color/bluePrimary">
 
     <ListView
         android:id="@+id/listview"

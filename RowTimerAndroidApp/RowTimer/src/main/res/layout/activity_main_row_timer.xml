@@ -44,8 +44,8 @@
         android:layout_height="wrap_content"
         android:text="LOGIN"
         android:id="@+id/btnTestLogin"
-        android:onClick="startLoginActivity"
 
+        android:onClick="startLoginActivity"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
 

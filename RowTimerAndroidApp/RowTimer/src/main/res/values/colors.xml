@@ -6,4 +6,5 @@
 
     <color name="bluePrimary">#0096cc</color>
     <color name="blueDark">#004b66</color>
+    <color name="lightGrey">#dddddd</color>
 </resources>

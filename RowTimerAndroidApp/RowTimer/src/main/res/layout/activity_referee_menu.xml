@@ -3,46 +3,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pt.iscte.row_timer.android.activities.RefereeMenuActivity">
+    tools:context="pt.iscte.row_timer.android.activities.RefereeMenuActivity"
+
+    android:padding="0dp"
+    android:background="@color/bluePrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEvent"
+        android:layout_alignParentTop="true"
+        android:text="Event:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEventName"
+        android:text="CURRENT EVENT NAME"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvEvent"
+        android:textColor="#FFF"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRace"
+        android:text="Current Race:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tvEventName"
+        android:textColor="#FFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRaceName"
+        android:text="CURRENT RACE NAME"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvRace"
+        android:textColor="#FFF"
+        android:textSize="30dp"/>
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Procedure"
+        android:text="START PROCEDURE"
         android:id="@+id/btnStartProcedure"
-        android:layout_alignParentTop="true"
+
+        android:layout_below="@+id/tvRaceName"
+        android:layout_marginTop="25dp"
+
+        android:minWidth="300dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="25dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp"
         android:onClick="chooseStartProcedure" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finish Procedure"
+        android:text="ARRIVAL PROCEDURE"
         android:id="@+id/btnFinish"
+
         android:layout_below="@+id/btnStartProcedure"
+        android:layout_marginTop="25dp"
+
+        android:minWidth="300dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="25dp"
         android:layout_centerHorizontal="true"
         android:onClick="chooseFinishProcedure" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Start Times"
+        android:text="UPLOAD START TIMES"
         android:id="@+id/btnUpload"
-        android:layout_below="@+id/btnFinish"
-        android:layout_alignStart="@+id/btnFinish"
-        android:onClick="chooseUploadStartRaces" />
+
+        android:layout_above="@+id/btnUploadResults"
+        android:layout_marginBottom="15dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Results"
+        android:text="UPLOAD RESULTS"
         android:id="@+id/btnUploadResults"
-        android:layout_below="@+id/btnUpload"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
         android:layout_centerHorizontal="true"
-        android:onClick="chooseUploadResults" />
+        android:onClick="chooseUploadResults"
+        />
+
 </RelativeLayout>

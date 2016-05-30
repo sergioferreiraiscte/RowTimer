@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.Date;
 import java.util.List;
@@ -46,7 +47,9 @@ public class StartProcedureActivity extends AppCompatActivity {
     }
 
     public void markStartOfRace(View view) {
-        Log.d(TAG,"marStartOfRace()");
+        TextView v = (TextView) findViewById(R.id.tvCountdown);
+        v.setText("15''");
+        Log.d(TAG,"markStartOfRace()");
         Race race = application.getCurrentRace();
         race.setStartTime(new Date());
 

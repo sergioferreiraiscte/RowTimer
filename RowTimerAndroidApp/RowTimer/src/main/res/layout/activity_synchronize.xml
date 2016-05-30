@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="pt.iscte.row_timer.android.activities.SynchronizeActivity">
+    tools:context="pt.iscte.row_timer.android.activities.SynchronizeActivity"
+
+    android:padding="0dp"
+    android:background="@color/bluePrimary">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
