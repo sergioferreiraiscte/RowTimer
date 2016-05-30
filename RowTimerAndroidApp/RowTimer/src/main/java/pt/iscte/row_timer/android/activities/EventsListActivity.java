@@ -102,8 +102,12 @@ public class EventsListActivity extends AppCompatActivity {
         Log.d(TAG, "Event choosed : " + eventID);
         RowTimerApplication application = (RowTimerApplication) getApplication();
         application.setCurrentEvent(rowingEvent);
+        Intent gotoRefereeMenu = new Intent(this, RefereeMenuActivity.class);
+        startActivity(gotoRefereeMenu);
+        /*
         Intent gotoEventDetail = new Intent(this, EventDetailActivity.class);
         startActivity(gotoEventDetail);
+        */
     }
 
     @Override

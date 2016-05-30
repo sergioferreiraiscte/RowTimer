@@ -30,35 +30,13 @@
         android:textColor="#FFF"
         android:textSize="30dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvRace"
-        android:text="Current Race:"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/tvEventName"
-        android:textColor="#FFF"
-        android:textSize="20dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvRaceName"
-        android:text="CURRENT RACE NAME"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/tvRace"
-        android:textColor="#FFF"
-        android:textSize="30dp"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="START PROCEDURE"
         android:id="@+id/btnStartProcedure"
 
-        android:layout_below="@+id/tvRaceName"
+        android:layout_below="@+id/tvEventName"
         android:layout_marginTop="25dp"
 
         android:minWidth="300dp"
@@ -98,6 +76,7 @@
         android:textColor="#FFF"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
+        android:onClick="chooseUploadStartRaces"
         />
 
     <Button
