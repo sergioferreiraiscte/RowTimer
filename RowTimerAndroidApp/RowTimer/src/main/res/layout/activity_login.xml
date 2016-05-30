@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:text="@string/btLogin"
         android:id="@+id/btLogin"
-        android:layout_above="@+id/login_button"
+        android:layout_above="@+id/facebook_login_button"
         android:layout_marginBottom="25dp"
 
         android:onClick="checkLoginCredentials"
@@ -95,7 +95,7 @@
      />
 
     <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
+        android:id="@+id/facebook_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

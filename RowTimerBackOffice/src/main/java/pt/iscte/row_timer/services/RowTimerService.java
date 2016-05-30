@@ -30,6 +30,7 @@ import org.springframework.stereotype.Service;
 
 import pt.iscte.row_timer.beans.DBService;
 import pt.iscte.row_timer.beans.RowTimerException;
+import pt.iscte.row_timer.events.Login;
 import pt.iscte.row_timer.events.Result;
 import pt.iscte.row_timer.events.RowingEvent;
 import pt.iscte.row_timer.events.StartRace;
@@ -203,4 +204,34 @@ public class RowTimerService {
 		return response.build();
 	}
 
+	/**
+	 * Store the movie related to an race
+	 * TODO : Implement it 
+	 * @return
+	 */
+	@POST
+	@Path("/login/{username}")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response login(@PathParam("username") String username, String encriptedPassword) {
+		if ( logger.isDebugEnabled()) {
+			logger.debug("/api/login/{username} - Login with username and encripted password : " + username + "/" + encriptedPassword);
+		}
+
+		Login login = new Login();
+		login.setUsername(username);
+		login.setPassword(encriptedPassword);
+		
+		try {
+			//login = dbService.login(login);
+		} catch (Exception e) {
+			logger.error("Error logging in : ",e);
+			ResponseBuilder response = Response.serverError();
+			return response.build();
+		}
+		
+		ResponseBuilder response = Response.ok((Object) login );
+		return response.build();
+	}
+
+	
 }

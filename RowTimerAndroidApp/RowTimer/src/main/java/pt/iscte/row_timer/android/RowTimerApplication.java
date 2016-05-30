@@ -10,6 +10,7 @@ import pt.iscte.row_timer.android.activities.EventsListActivity;
 import pt.iscte.row_timer.android.activities.GetRemoteDataJob;
 import pt.iscte.row_timer.android.activities.OnTaskCompleted;
 import pt.iscte.row_timer.android.database.RowingEventsDataSource;
+import pt.iscte.row_timer.android.model.Login;
 import pt.iscte.row_timer.android.model.Race;
 import pt.iscte.row_timer.android.model.RowingEvent;
 import pt.iscte.row_timer.android.synchronization.ConnectionUtil;
@@ -25,6 +26,7 @@ public class RowTimerApplication extends Application {
     private List<RowingEvent> eventList;
     private RowingEvent currentEvent;
     private Race currentRace;
+    private Login login;
 
     @Override
     public void onCreate() {
@@ -57,6 +59,20 @@ public class RowTimerApplication extends Application {
         //eventList = database.readRowingEventList();
     }
 
+    /**
+     * Check if username and password are valid and store the information in application level
+     *
+     * @param username
+     * @param password
+     */
+    public void login(String username, String password) {
+        // If have connectivity
+        // Check on remote database
+       // Check in local database
+        // If valid
+        // store info on Login object
+    }
+
 
     public RowingEvent getCurrentEvent() {
         return currentEvent;
@@ -80,5 +96,13 @@ public class RowTimerApplication extends Application {
 
     public void setCurrentRace(Race currentRace) {
         this.currentRace = currentRace;
+    }
+
+    public Login getLogin() {
+        return login;
+    }
+
+    public void setLogin(Login login) {
+        this.login = login;
     }
 }

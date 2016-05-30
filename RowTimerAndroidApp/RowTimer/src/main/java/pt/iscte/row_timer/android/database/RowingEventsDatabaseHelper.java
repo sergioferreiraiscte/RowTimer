@@ -10,7 +10,7 @@ import android.util.Log;
  */
 public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
     private static final String TAG = "RowingEventsDBHelper";
-    private static final int DATABASE_VERSION = 6;
+    private static final int DATABASE_VERSION = 7;
 
     public RowingEventsDatabaseHelper(Context c) {
         super(c, "ROWING_EVENTS_DATABASE", null, DATABASE_VERSION);
@@ -72,6 +72,12 @@ public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
                 "  crew VARCHAR(20), " +
                 "  end_time TIMESTAMP " +
                 "); ");
+        db.execSQL("CREATE TABLE login ( " +
+                "  username VARCHAR(128) PRIMARY KEY, " +
+                "  logged INTEGER, " +
+                "  password VARCHAR(128) " +
+                "); ");
+
     }
 
     @Override
@@ -87,6 +93,7 @@ public class RowingEventsDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS crew_member");
         db.execSQL("DROP TABLE IF EXISTS alignment");
         db.execSQL("DROP TABLE IF EXISTS boat_type");
+        db.execSQL("DROP TABLE IF EXISTS login");
         onCreate(db);
     }
 

@@ -16,6 +16,7 @@ import pt.iscte.row_timer.android.model.Category;
 import pt.iscte.row_timer.android.model.Competitor;
 import pt.iscte.row_timer.android.model.Crew;
 import pt.iscte.row_timer.android.model.CrewMember;
+import pt.iscte.row_timer.android.model.Login;
 import pt.iscte.row_timer.android.model.Person;
 import pt.iscte.row_timer.android.model.Race;
 import pt.iscte.row_timer.android.model.Result;
@@ -845,6 +846,15 @@ public class RowingEventsDataSource {
             retval = true;
         c.close();
         return retval;
+    }
+
+    /**
+     * Store the login information on local database
+     * TODO : Do it
+     * @param login
+     */
+    public void storeLoginInfo(Login login) {
+
     }
 
 }

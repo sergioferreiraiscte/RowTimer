@@ -2,6 +2,7 @@ package pt.iscte.row_timer.android.synchronization;
 
 import android.util.Log;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 
@@ -19,6 +20,8 @@ import java.util.List;
 
 import pt.iscte.row_timer.android.RowTimerException;
 import pt.iscte.row_timer.android.database.RowingEventsDataSource;
+import pt.iscte.row_timer.android.model.Login;
+import pt.iscte.row_timer.android.model.Race;
 import pt.iscte.row_timer.android.model.Result;
 import pt.iscte.row_timer.android.model.RowingEvent;
 import pt.iscte.row_timer.android.model.StartRace;
@@ -54,6 +57,53 @@ public class ExecuteRemoteServices {
             URL url = new URL(strURL.toString());
             urlConnection = (HttpURLConnection) url.openConnection();
 
+
+            InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+            int data = in.read();
+            while (data != -1) {
+                char current = (char) data;
+                data = in.read();
+                receivedStr.append(current);
+            }
+        } catch (FileNotFoundException fne) {
+            // 404 - No event after pulled time
+            return null;
+        } catch (Exception e) {
+            Log.d(TAG, "Exception ocurred : " + e.getMessage());
+            throw new RowTimerException(e);
+        } finally {
+            if (urlConnection != null)
+                urlConnection.disconnect();
+        }
+        Log.d(TAG, "Received : " + receivedStr.toString());
+
+        return receivedStr.toString();
+    }
+
+    /**
+     * Execute any remote REST service.
+     * TODO : Generalize to be able to use POST
+     *
+     * @param apiURLRightSide
+     * @param apiURLRightSide
+     * @return
+     * @throws RowTimerException
+     */
+    private String executeGET(String apiURLRightSide, String jsonStr) throws RowTimerException {
+        Log.d(TAG, "executeRESTService()");
+        StringBuffer receivedStr = new StringBuffer();
+        HttpURLConnection urlConnection = null;
+        try {
+            StringBuffer strURL = new StringBuffer();
+            strURL.append(SERVICE_URL).append(apiURLRightSide);
+            URL url = new URL(strURL.toString());
+            urlConnection = (HttpURLConnection) url.openConnection();
+
+            // Send data in the body
+            OutputStreamWriter writer = new OutputStreamWriter(urlConnection.getOutputStream());
+            writer.write(jsonStr);
+            writer.flush();
+            writer.close();
 
             InputStream in = new BufferedInputStream(urlConnection.getInputStream());
             int data = in.read();
@@ -134,7 +184,6 @@ public class ExecuteRemoteServices {
 
     /**
      * Get the list of events
-     * TODO : Should get event list only after last pull
      *
      * @return
      * @throws RowTimerException
@@ -195,5 +244,49 @@ public class ExecuteRemoteServices {
         StringBuffer strURL = new StringBuffer();
         strURL.append("/event/").append(eventId).append("/arrival/times");
         executePOST(strURL.toString(),jsonStr);
+    }
+
+    /**
+     * Send the movie related to a race to the server.
+     *
+     * TODO : Implement and test
+     *
+     * @param filename
+     */
+    public void sendMovie(Race race, String filename) {
+
+    }
+
+    /**
+     * Execute the remote login
+     *
+     * @param username Name of the emote user
+     * @param password encrypted pwssword to be compared
+     * @return
+     */
+    public Login remoteLogin(String username, String password) throws RowTimerException {
+        Log.d(TAG, "remoteLogin()");
+        StringBuffer strURL = new StringBuffer();
+        strURL.append("/login/").append(username);
+
+        String jsonStr = null;
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            jsonStr = mapper.writeValueAsString(password);
+        } catch (JsonProcessingException e) {
+            throw new RowTimerException(e);
+        }
+
+        String jsonString = executeGET(strURL.toString(),jsonStr);
+        if (jsonString == null )
+            return null;
+        ObjectMapper objectMapper = new ObjectMapper();
+        Login login = null;
+        try {
+            login = objectMapper.readValue(jsonString.getBytes(), Login.class);
+        } catch (IOException e) {
+            throw new RowTimerException(e);
+        }
+        return login;
     }
 }
