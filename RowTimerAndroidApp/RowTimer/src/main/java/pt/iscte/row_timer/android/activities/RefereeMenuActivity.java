@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import pt.iscte.row_timer.android.RowTimerApplication;
@@ -26,6 +27,12 @@ public class RefereeMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_referee_menu);
         application = (RowTimerApplication) getApplication();
         currentEvent = application.getCurrentEvent();
+        TextView eventNameView = (TextView) this.findViewById(R.id.tvEventName);
+        eventNameView.setText(currentEvent.getName());
+        /*
+        TextView currentRaceView = (TextView) this.findViewById(R.id.tvRaceName);
+        eventNameView.setText(currentRace.getName());
+        */
     }
 
     /**

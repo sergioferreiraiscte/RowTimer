@@ -14,6 +14,7 @@ import java.util.List;
 import pt.iscte.row_timer.android.RowTimerApplication;
 import pt.iscte.row_timer.android.model.Alignment;
 import pt.iscte.row_timer.android.model.Race;
+import pt.iscte.row_timer.android.model.Result;
 import pt.iscte.row_timer.android.synchronization.RaceFinishJob;
 import pt.iscte.row_timer.android.synchronization.RaceStartJob;
 
@@ -24,14 +25,14 @@ public class FinishProcedureActivity extends AppCompatActivity {
     private static final String TAG = "FinishProcedureActivity";
     private RowTimerApplication application;
     Race race;
-    List<Date> arrivals;
+    List<Result> arrivals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_finish_procedure);
-        arrivals = new ArrayList<Date>();
+        arrivals = new ArrayList<Result>();
 
         application = (RowTimerApplication) getApplication();
         race = application.getCurrentRace();
@@ -74,11 +75,27 @@ public class FinishProcedureActivity extends AppCompatActivity {
     */
 
 
+    /**
+     * A crew has arrived and the referee mark is arrival time
+     *
+     * @param view
+     */
     public void markCrewArrival(View view) {
         Log.d(TAG,"markCrewArrival()");
 
-        race.setStartTime(new Date());
-        arrivals.add(new Date());
+        Result result = new Result();
+        result.setFinishTime(new Date());
+        result.setEvent_id(race.getEventId());
+        result.setRaceno(race.getSeqno());
+        arrivals.add(result);
+    }
+
+    /**
+     * Edit the order of the arrivals
+     * Open a dialog with a list that edit the ResultList
+     */
+    public void editOrder() {
+
     }
 
     /**
@@ -89,11 +106,14 @@ public class FinishProcedureActivity extends AppCompatActivity {
      */
     public void done(View view) {
         Log.d(TAG,"done()");
+
+        // TODO : Should update the corresponding team
         List<Alignment> alignment = race.getCrewAlignment();
         for (int i=0 ; i < arrivals.size(); i++ ) {
             Alignment lane = alignment.get(i);
-            lane.setEndTime(arrivals.get(i));
+            lane.setEndTime(arrivals.get(i).getFinishTime());
         }
+
 
         final ProgressDialog ringProgressDialog = ProgressDialog.show(FinishProcedureActivity.this,
                 "Please wait ...", "Updating local race results...", true);

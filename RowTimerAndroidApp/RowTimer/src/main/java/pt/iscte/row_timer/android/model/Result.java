@@ -16,6 +16,7 @@ public class Result {
     private Date finishTime;
     private Integer lane;
     private String crewId;
+
     public String getEvent_id() {
         return event_id;
     }
