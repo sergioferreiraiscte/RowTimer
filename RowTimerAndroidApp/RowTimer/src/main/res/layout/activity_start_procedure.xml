@@ -23,10 +23,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
+        android:textSize="100dp"
         android:id="@+id/tvCountdown"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btnStartRace"/>
+        android:text="15:00"
+        android:textColor="#FFF"
+        android:layout_above="@+id/btnStartRace"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
