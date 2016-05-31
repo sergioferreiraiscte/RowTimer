@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/tvLoggedAs"
         android:layout_marginTop="25dp"
-        android:src="@drawable/placeholder200"
+        android:src="@drawable/man"
         />
 
     <TextView
@@ -38,13 +38,30 @@
         android:layout_marginTop="25dp"
         android:layout_below="@+id/imageView"
         android:textColor="#FFF"
-        android:textSize="30dp"/>
+        android:textSize="25dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGOUT"
         android:id="@+id/btnLogout"
+
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginTop="25dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/btnLogin"
 
         android:layout_marginBottom="50dp"
         android:layout_below="@+id/tvUsername"

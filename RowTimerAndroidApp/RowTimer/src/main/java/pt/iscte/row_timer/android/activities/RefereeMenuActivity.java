@@ -15,10 +15,12 @@ import pt.iscte.row_timer.android.synchronization.DataSynchronizationJob;
 import pt.iscte.row_timer.android.synchronization.UpdateResultsJob;
 import pt.iscte.row_timer.android.synchronization.UpdateStartTimesJob;
 
-public class RefereeMenuActivity extends AppCompatActivity {
+public class RefereeMenuActivity extends BaseMenuActivity {
     private static final String TAG = "RefereeMenuActivity";
     private RowTimerApplication application;
     private RowingEvent currentEvent;
+
+    public String activityName = "RefereeMenu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,10 @@ public class RefereeMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_referee_menu);
         application = (RowTimerApplication) getApplication();
         currentEvent = application.getCurrentEvent();
-        TextView eventNameView = (TextView) this.findViewById(R.id.tvEventName);
-        eventNameView.setText(currentEvent.getName());
+        if (currentEvent != null){
+            TextView eventNameView = (TextView) this.findViewById(R.id.tvEventName);
+            eventNameView.setText(currentEvent.getName());
+        }
         /*
         TextView currentRaceView = (TextView) this.findViewById(R.id.tvRaceName);
         eventNameView.setText(currentRace.getName());

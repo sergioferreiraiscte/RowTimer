@@ -18,7 +18,7 @@ import pt.iscte.row_timer.android.model.Race;
 import pt.iscte.row_timer.android.model.RowingEvent;
 import pt.iscte.row_timer.android.synchronization.DataSynchronizationJob;
 
-public class RaceListActivity extends AppCompatActivity {
+public class RaceListActivity extends BaseMenuActivity {
     private static final String TAG = "RaceListActivity";
     private RowTimerApplication application;
 
