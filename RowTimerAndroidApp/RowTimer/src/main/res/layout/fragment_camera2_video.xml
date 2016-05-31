@@ -31,22 +31,39 @@
         android:layout_alignParentStart="true"
         android:layout_below="@id/texture"
         android:background="#4285f4">
+    </FrameLayout>
 
-        <Button
+    <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mark Arrival"
             android:id="@+id/mark_arrival"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
 
-        <Button
-            android:id="@+id/video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/record" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
 
+            android:minWidth="250dp"
+            android:background="@color/blueDark"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+        />
 
-    </FrameLayout>
+    <Button
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record"
+
+        android:layout_above="@+id/mark_arrival"
+        android:layout_marginBottom="15dp"
+
+        android:minWidth="250dp"
+        android:background="@color/blueDark"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>

@@ -1,2 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.2.1_33e83de62e268452419efcdd4629e6918aa57d23\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.12.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="26645b518694e20a97fc19a6a3c3933c0cc41bc1">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.12.1_9229e5c784fbdcc8e77488e6b0497c1aa7efc39c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_82f32996e005c1e1a1c8f73f5ba020019469d439\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_7f1e0537f95d4e1a22d2e85de1b6be15dd2d0233\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_991e97c706fdbfe5b12bb33958fff1f22a923341\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5cb72d20c241bf19df22bf092311c8c520dcef61">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c2fca3a4fbad4c01452cb6d57ccb175152b182e2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="cc86135f56c0bca7f1ee4fc38c753ec052b0637d">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4e1c344b7c9b60cbb5bd43a28794745c36c526a4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_7f4c753b88f7c9aa10574deca22633f7e968cbff\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_fb57ccca6e25d002775168ca81d95c39564d088f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.5.3\a8b8a6dfc8a17890e4c7ff8aed810763d265b68b\jackson-core-2.5.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a8b8a6dfc8a17890e4c7ff8aed810763d265b68b">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.5.3_286626f1d30804b6290885d979ddbbcc95de9496\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_ddfbfbed6f06812d4ea028f3312b261d030d862d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_7856800c278de08672f361df02a53e66e0394c79\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_526820d7da530ec77ad74fb69c7fe4f8f8e453ff\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_194d5f1cf95df67a95d2dc98db764526deaf374b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_e9046634ff4548a3925a9c8bffdb1163f357573b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.4.0_a65e9a9c97c40794f87fd2a3fdba2af8ef1afc05\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_611dab5f91d667946e25d35ec6e1710c107bfd2d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.3.0_5215730940197c475df36c470991cf4eb48d4d6e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.5.3\ade455ede4797ed450ca6a56e589a81278fc8f45\jackson-annotations-2.5.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ade455ede4797ed450ca6a56e589a81278fc8f45">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.5.3_9bd091bf8cac66caad342eb6c3961400af7a331e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\BRU\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.5.3\c37875ff66127d93e5f672708cb2dcc14c8232ab\jackson-databind-2.5.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c37875ff66127d93e5f672708cb2dcc14c8232ab">
+        <dex dex="C:\Users\BRU\AndroidStudioProjects\RowTimer\RowTimerAndroidApp\RowTimer\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.5.3_a404ee90058c37914a027500cb19431013a6c7b5\classes.dex" />
+    </item>
+
+</items>
