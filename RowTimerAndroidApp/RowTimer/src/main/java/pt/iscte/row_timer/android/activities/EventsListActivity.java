@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import pt.iscte.row_timer.android.RowTimerApplication;
@@ -22,7 +22,8 @@ import pt.iscte.row_timer.android.synchronization.DataSynchronizationJob;
 /**
  * Show the event list, and when the user choose one, it goes to the
  */
-public class EventsListActivity extends AppCompatActivity {
+public class EventsListActivity extends BaseMenuActivity {
+
     private static final String TAG = "EventsListActivity";
     private RowingEvent rowingEvent;
 
@@ -31,7 +32,6 @@ public class EventsListActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate()");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events_list);
-
         RowTimerApplication application = (RowTimerApplication) getApplication();
         List<RowingEvent> eventList = application.getEventList();
         if (eventList == null) {
@@ -79,7 +79,6 @@ public class EventsListActivity extends AppCompatActivity {
         }
     }
 
-
     /**
      * Clicked to choose the event from the list.
      * When is choosed, it starts an Intent to execute/show EventDetailActivity
@@ -95,12 +94,4 @@ public class EventsListActivity extends AppCompatActivity {
         startActivity(gotoEventDetail);
         */
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_settings, menu);
-        return true;
-    }
-
 }

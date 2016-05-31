@@ -2,6 +2,8 @@ package pt.iscte.row_timer.android.activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,7 +32,7 @@ public class StartProcedureActivity extends AppCompatActivity {
         Log.d(TAG,"onCreate()");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_procedure);
-        setTitle("lane alignment");
+        setTitle("LANE ALIGNEMENT");
 
         application = (RowTimerApplication) getApplication();
         List<Alignment> crewAlignment = application.getCurrentRace().getCrewAlignment();
@@ -47,8 +49,7 @@ public class StartProcedureActivity extends AppCompatActivity {
     }
 
     public void markStartOfRace(View view) {
-        TextView v = (TextView) findViewById(R.id.tvCountdown);
-        v.setText("15''");
+
         Log.d(TAG,"markStartOfRace()");
         Race race = application.getCurrentRace();
         race.setStartTime(new Date());
@@ -64,6 +65,33 @@ public class StartProcedureActivity extends AppCompatActivity {
                     }
                 });
         rsj.execute();
+
+        final TextView timer = (TextView) findViewById(R.id.tvCountdown);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.horn);
+
+        new CountDownTimer(15000, 10) {
+            public void onTick(long milliseconds) {
+                if(milliseconds/1000 > 9){
+                    if ((milliseconds%1000) / 10 > 9){
+                        timer.setText(milliseconds/1000 + ":" + (milliseconds%1000) / 10);
+                    }else{
+                        timer.setText(milliseconds/1000 + ":" + (milliseconds%1000) / 10 + "0");
+                    }
+                }else{
+                    if ((milliseconds%1000) / 10 > 9){
+                        timer.setText("0" + milliseconds/1000 + ":" + (milliseconds%1000) / 10);
+                    }else{
+                        timer.setText("0" + milliseconds/1000 + ":" + (milliseconds%1000) / 10 + "0");
+                    }
+                }
+
+            }
+
+            public void onFinish() {
+                timer.setText("GO");
+                mp.start();
+            }
+        }.start();
     }
 
 }

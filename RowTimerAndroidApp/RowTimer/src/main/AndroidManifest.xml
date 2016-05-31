@@ -5,9 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
 
@@ -31,68 +30,58 @@
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:label="LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <activity
             android:name=".EventsListActivity"
             android:label="EVENTS LIST"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".EventDetailActivity"
             android:label="@string/title_activity_event_detail"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RaceModeActivity"
             android:label="RACE MODE"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".GetRemoteDataActivity"
             android:label="@string/title_activity_get_remote_data"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".RefereeMenuActivity"
             android:label="REFEREE MENU"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".SynchronizeActivity"
             android:label="@string/title_activity_synchronize"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".RaceListActivity"
             android:label="RACE LIST"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".StartProcedureActivity"
             android:label="START RACE"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".FinishProcedureActivity"
-            android:screenOrientation="portrait"
-            android:label="FINISH RACE"/>
+            android:label="FINISH RACE"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SettingsActivity"
             android:label="SETTINGS"
@@ -101,6 +90,7 @@
             android:name=".VideoActivity"
             android:label="@string/title_activity_activity_video"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -108,7 +98,7 @@
             </intent-filter>
             -->
         </activity>
-
+        <activity android:name=".BaseMenuActivity"></activity>
     </application>
 
 </manifest>
